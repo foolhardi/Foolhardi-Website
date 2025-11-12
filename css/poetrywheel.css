@@ -1,0 +1,82 @@
+:root {
+    @font-face {
+        font-family: Averia;
+        src: url(/font/averia-regular.ttf);
+    }
+    
+
+}
+
+
+*,
+*::before
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin:0;
+}
+
+html {
+    position: relative;
+    height: 100%;
+
+}
+
+.tooltip {
+    border-color: black;
+    display: none;
+}
+
+.center, .deg0, .deg45, .deg135, .deg180, .deg225, .deg315 :hover + .tooltip{
+    display: block;
+
+
+}
+
+.header {
+    
+    text-align: center;
+}
+
+h1 {
+    color:gray;
+    font-family: Averia;
+}
+
+body {
+    font-family: Averia;
+    margin: 3;
+    background-image: url("/bgimg/poem wheel.jpg");
+    background-color: rgb(0, 0, 0);
+}
+.circle-container {
+    position: relative;
+    padding: 6em;
+    width: 24em;
+    height: 24em;
+    padding: 2.8em;
+    /*2.8em = 2em*1.4 (2em = half the width of a link with img, 1.4 = sqrt(2))*/
+    border-radius: 50%;
+    margin: 1.75em auto 0;
+    
+}
+.circle-container a {
+    display: block;
+    position: absolute;
+    top: 70%; left: 50%;
+    width: 4em; height: 4em;
+    margin: -2em;
+    
+}
+.circle-container img { display: block; width: 100%; }
+.deg0 { transform: translate(12em); } /* 12em = half the width of the wrapper */
+.deg45 { transform: rotate(45deg) translate(12em) rotate(-45deg); }
+.deg135 { transform: rotate(135deg) translate(12em) rotate(-135deg); }
+.deg180 { transform: translate(-12em); }
+.deg225 { transform: rotate(225deg) translate(12em) rotate(-225deg); }
+.deg315 { transform: rotate(315deg) translate(12em) rotate(-315deg); }
+
+.circle-container img:hover {
+    background-color: rgb(82, 81, 81) ;
+    box-shadow: 0 0 100px rgb(255, 255, 255);
+}
