@@ -6,21 +6,215 @@
     <title>Beloved Sites</title>
 
 <style>
-    .buttons{
+   
+  @font-face {
+  font-family: "Averia";
+  src:
+    local("Averia"),
+    url("font/Averia-Regular.ttf") format("opentype") 
+    }
 
+    h1 , h3 , p , li , a , ul, summary {
+        font-family: Averia;
+        color: hotpink;
+    }
+
+    body {
+        background-color: black;
+        background-image: url("bgimg/flower 1.png");
+
+    }
+
+    .header {
+        text-align: center;
+    
     }
     
-    .resources{
+    .container {  
+        border: 2px;
+        border-color: hotpink;
+        border-style: dashed;
+        border-radius: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 380px;
+        margin-right: 380px;
+        padding: 10px;
+    }
+
+    /* Sidebar/left column */
+    .nav {
+        border: 2px;
+        border-color: hotpink;
+        border-style: solid;
+        border-radius: 10px;
+        flex: 20%;
+        padding: 20px;
+        margin: 10px;
+        background-color: black;
+        opacity: 70%;
+    }
+
+    .nav h3 , h4 {
+        text-align: center;
+    }
+
+
+    .nav ul {
+        list-style-type: none;
+        
+    }
+
+    .nav li {
+        margin: 5px;
 
     }
+
+    .navimg {
+        display: block;
+        text-align: center;
+    }
+
+
+    .navbutton {
+        border: 2px;
+        border-color: hotpink;
+        border-style: solid;
+        border-radius: 9px;
+        padding: 10px;
+        margin: 0px;
+        display: block;
+        text-align: center;
+        text-decoration: none;
+
+    }
+
+    .navbutton img {
+        max-width: 88px;
+        
+    }
+
+    .navbutton:hover {
+        background-color: lightgray;
+    }
+
+    /* Main column */
+    .main {
+        border: 2px;
+        border-color: hotpink;
+        border-style: solid;
+        border-radius: 10px;
+        flex: 60%;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-top: 20px;
+        padding-bottom: 100px;
+        text-align: center;
+        margin: 10px;
+        background-color: black;
+       
+        
+        
+    }
+
+    .wrapped-image {
+        float: left; /* Only applies to the image with this class */
+        margin: 10px; /* Adds space around this image */
+    
+    }
+
+
+
+    .about {
+        border: 2px;
+        border-color: hotpink;
+        border-style: solid;
+        border-radius: 10px;
+        padding: 20px;
+        text-align: left;
+        margin-bottom: 9px;
+        background-color: black;
+        opacity: 70%;
+        
+    }
+    
+
+    .buttons {
+        border: 2px;
+        border-color: hotpink;
+        border-style: solid;
+        border-radius: 10px;
+        padding-bottom: 5px;
+        padding-top: 5px;
+        text-align: center;
+        margin-bottom: 9px;
+        background-color: black;
+        opacity: 70%;
+
+    }
+     
+    .pixels {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 200px;
+    }
+
+    
+
+
+    footer {
+        position: fixed;
+        bottom: 0;
+        left:0;
+        width: 100%;
+        text-align: center;
+        z-index: 1000;
+    }
+
+
+
+
 
 </style>    
 </head>
 
 <body>
+    <div class="header">
+        <h1>｡𖦹｡° flowers turn to face it ｡𖦹｡°</h1>
+    </div>
+
+<div class="container">
+    <div class="nav">
+      <h3>⋆✴︎˚｡⋆ My Projects ⋆✴︎˚｡⋆</h3>
+
+        
+            
+            <a class="navbutton" href="poetrywheel.html"> Poem Wheel</a> 
+            <a class="navbutton" href="crafts.html">Crafts</a> 
+            <a class="navbutton" href="https://luckfever.neocities.org/"target="_blank">My Band</a>
 
 
-   <div class="buttons">
+        <h3>⋆✴︎˚｡⋆ Webrings - Links ⋆✴︎˚｡⋆ </h3>
+            
+          
+            <a class="navbutton" href="about.html"> About Me</a>
+            <a class="navbutton" href="https://foolhardi.atabook.org/"target="_blank">Guestbook</a>
+            <a class="navbutton" href="belovedsites.html">Beloved Sites and Friends</a>
+            <a class="navbutton" href="resources.html"> Resources and Credits</a>
+            <a class="navbutton" href="https://neocities.org/site/foolhardi"target="_blank">Follow Me on Neocities</a>
+            <br> <br> <br>
+
+    
+    
+        
+        </div>
+    
+
+   <div class="main">
+    
+        <h3>｡𖦹｡°Sites I Love｡𖦹｡°</h3>
+        <br><br>
         <a href="https://coffeeplant.neocities.org/"><img src='pixels/sites/coffeeplant.png'></a>
         <a href="https://ribo.zone/"><img src='pixels/Sites/ribose.png'></a>
         <a href="https://cinni.net/"><img src='pixels/Sites/cinni_angelbutton3.gif'></a>
@@ -30,12 +224,17 @@
         <a href="https://killychan.neocities.org/"><img src="pixels/Sites/killychan.gif"></a>
         <a href="https://plasticdino.net/"><img src="pixels/Sites/plasticdino.gif"></a>
         <a href="https://bedr00mz.neocities.org/"><img src="pixels/Sites/Bedr00mZ_BUTT0N4-2023_Viktor_Tibay.gif"></a>
+        <br><br><br><br>
 
+        <h3>｡𖦹｡°Resources｡𖦹｡°</h3>
+        
+        <p> One of the essentials that helps this site run smooth is <a href="https://scumsuck.com/resources/deployneocities/">deploying to neocities</a>. This tutorial teaches you to connect your Visual Studio Code (which is the program I code in) to Github, and your Github account to Neocities. No more copy and pasting! </p>
+        <br>
+        <p>I use <a href="https://app.dithermark.com/">dithermark</a> to dither... my marks...</p>
+        <br>
+        <p>There's plenty of other helpful stuff that I used to build this site but I can't really think of it right now....</p>
    </div>
-    
-   <div class="resources">
-        <a href="https://scumsuck.com/resources/deployneocities/#deploy-to-neocities-%F0%9F%90%88-0">
-   </div>
-
+</div>  
+  
 </body>
 </html>
