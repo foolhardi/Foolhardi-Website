@@ -350,20 +350,21 @@
   font-family: "Averia";
   src:
     local("Averia"),
-    url("/font/Averia-Regular.ttf") format("opentype") 
+    url("font/Averia-Regular.ttf") format("opentype") 
     }
-
+    a {
+            font-family: Averia;
+            color: antiquewhite;
+            text-decoration: none;
+            font-size: larger;
+        }
+        
     body {
         background-color: black;
     
     }
 
-    a {
-        font-family: Averia;
-        color: antiquewhite;
-        text-decoration: none;
-        font-size: larger;
-    }
+   
     .container {  
         border: 2px;
         border-radius: 10px;
@@ -376,11 +377,12 @@
     }
 
     .container img {
-        max-width: 800px;
+        max-width: 600px;
         border-radius: 10px;
     }
 
     .container a:hover {
+        font-family:Averia;
         color: white;
     }
 </style>
@@ -394,7 +396,7 @@
         <img src="img/The moors pg 2.png"> <br><br>
         <img src="img/the moors pg 3.png"> <br><br>
         <img src="img/the moors pg 4.png"> <br><br><br><br>
-        <a href="index.html" style= "text-align: center;">-Return Home-             </a>
+        <a href="index.html" style= "text-align: center; font-family:Averia;">-Return Home-             </a>
         <a href="poetrywheel.html" style= "text-align: center;">                    -Poetry Wheel-</a>
         <br><br><br><br>
     </div>
