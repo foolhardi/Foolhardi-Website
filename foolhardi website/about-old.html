@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>⋆✴︎˚｡⋆About Me｡𖦹｡°</title>
+
+
+<style>
+  @font-face {
+  font-family: "Averia";
+  src:
+    local("Averia"),
+    url("font/Averia-Regular.ttf") format("opentype") 
+    }
+
+    h1 , h3 , p , li , a , ul {
+        font-family: Averia;
+        color: hotpink;
+    }
+
+    body {
+        background-color: black;
+        background-image: url("bgimg/flower 1.png");
+
+    }
+
+    .header {
+        text-align: center;
+    
+    }
+
+    .box {
+        display:block;
+    }
+    
+    .container {  
+        border: 2px;
+    border-color: hotpink;
+    border-style: dashed;
+        border-radius: 10px;
+        display:block;
+        flex-wrap: wrap;
+        margin-left: 720px;
+        margin-right: 180px;
+        margin-top: 100px;
+        padding: 50px;
+        background-color: black;
+        text-align: left;
+        
+    }
+    .container a {
+        text-align: center;
+    }
+    
+    .wrapped-image {
+        float: left; /* Only applies to the image with this class */
+        margin: 10px; /* Adds space around this image */
+        max-width: 600px;
+    
+    }
+
+    /*POP UP CREDITS TO SMALLWEB.SITE/ABOUT*/
+
+    #popup {
+  display: none;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 400px;
+  padding: 20px;
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: move;
+  z-index: 9999;
+}
+
+#popup-content {
+  margin-bottom: 10px;
+  flex: 1;
+  width: 100%;
+  overflow: auto;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#popup-close {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 20px;
+  height: 20px;
+  background-color: #f2f2f2;
+  border: none;
+  cursor: pointer;
+  float: right;
+}
+
+#popup-next {
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: #ddd;
+  border: 1px solid #999;
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+#popup-prev:hover,
+#popup-next:hover,
+#popup-close:hover {
+  background-color: #ccc;
+}
+
+
+
+.popup-title-bar {
+  background-color: #ccc;
+  padding: 5px;
+  margin: -20px -20px 10px -20px;
+  border-bottom: 1px solid #999;
+  color: #333;
+  font-weight: bold;
+}
+
+#popup-trigger {
+  font-family: monospace;
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: #ddd;
+  border: 1px solid #999;
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+  margin-right: 5px;
+}
+</style>
+</head>
+<body>
+
+<div class="box">
+<div class="bigme">
+    <img class= "wrapped-image" src= "img/meee wildberry dither.png" usemap="#map">
+    <map name="map">
+        <area shape="circle" coords="300, 100, 180" onclick="myFunction()">
+    </map>
+
+    <script>
+        function myFunction() {
+          alert("OW! Don't poke me :(");
+        }
+        </script>
+</div>
+<div class="container">
+<h3 style= "text-align: center;">About Me</h3>
+
+<p> 
+    Hello, I'm Damian (They/She/He) and this is my personal site!
+    <br><br>
+    I was born in 1999, I've lived in the Bay Area all my life, and am currently in San Jose. I majored in History and minored in Radio-TV-Film in college, and I work as an Audio Visual Technician in a few different theaters. 
+    <br><br>
+    I love cats, all music (but especially emo music), poetry, philosophy, the internet (duh), crafts, and fashion. I feel like all of my hobbies are connected in ways that are hard to explain. 
+    <br><br>
+    You can email me at damianmack99@gmail.com    
+    <br><br><br>
+
+    <a style="text-align: center;" href= "index.html">Return Home</a>
+</p>
+</div>
+</div>
+</body>
+</html>
+
+</body>
+
+</html>

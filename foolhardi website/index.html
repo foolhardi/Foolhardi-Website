@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>foolhardi</title>
 
 
 <style>
@@ -58,6 +58,7 @@
         margin: 10px;
     text-align: left;
     background-color: black;
+    
 }
 
 .wrapped-image {
@@ -85,6 +86,7 @@
         margin: 10px;
         background-color: black;
         opacity: 70%;
+        
     }
 
     .Sidebar h3 , h4 {
@@ -121,8 +123,26 @@
         background-color: lightgray;
     }
 
-.Journal { grid-area: Journal; 
-        border: 2px;
+.Journal { 
+    display: grid; 
+  grid-template-columns: 2fr 1fr; 
+  grid-template-rows: 1fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "JJournal updates"; 
+  grid-area: Journal; 
+  
+       
+       
+        text-align: left;
+        margin-bottom: 9px;
+        
+        overflow-y: scroll;
+       
+}
+
+.JJournal {
+    border: 2px;
         border-color: hotpink;
         border-style: solid;
         border-radius: 10px;
@@ -131,7 +151,29 @@
         text-align: left;
         margin-bottom: 9px;
         background-color: black;
-        
+        overflow-y: scroll;
+        max-height: 18em;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: red; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #b30000; 
 }
 
 .Footer { grid-area: Footer; 
@@ -144,29 +186,72 @@
         border-radius: 10px;
 }
 
-@media (max-width:600px) {
+@media (max-width:800px) {
 
     .container {  display: grid;
   grid-template-columns: 1fr 2fr 1fr;
-  grid-template-rows: .1fr .2fr 2fr 1.5fr .3fr;
+  grid-template-rows: .1fr 1fr .5fr 1.5fr .3fr;
   gap: 0px 0px;
   grid-auto-flow: row;
   grid-template-areas:
     "Header Header Header"
-    "MSidebar MSidebar MSidebar"
     "Welcome Welcome Welcome"
+     "Sidebar Sidebar Sidebar"
     "Journal Journal Journal"
     "Footer Footer Footer";
-    
-}
-    .Sidebar{
-        display: none;
     }
-    .MSidebar {
+
+    
+
+    .Sidebar {
+         grid-area: Sidebar; 
+    border: 2px;
+        border-color: hotpink;
+        border-style: solid;
+        border-radius: 10px;
+        padding: 4%;
+        margin: 10px;
+        background-color: black;
+       
+        
+    }
+
+    .Sidebar h3 , h4 {
+        text-align: center;
+    }
+
+
+    .Sidebar ul {
+        list-style-type: none;
+        
+    }
+
+    .Sidebar li {
+        margin: 5px;
 
     }
-    
-}
+
+
+
+.navbutton {
+        border: 2px;
+        border-color: hotpink;
+        border-style: solid;
+        border-radius: 9px;
+        padding: 10px;
+        margin: 0px;
+        display: block;
+        text-align: center;
+        text-decoration: none;
+
+    }
+
+.navbutton:hover {
+        background-color: lightgray;
+    }
+
+    }
+   
 
 </style>   
 </head>
@@ -214,36 +299,53 @@
             <a class="navbutton" href="https://foolhardi.atabook.org/"target="_blank">Guestbook</a>
             <a class="navbutton" href="belovedsites.html">Sites and Resources</a>
             <a class="navbutton" href="https://neocities.org/site/foolhardi"target="_blank">Follow Me on Neocities</a>
-            <br> <br> <br>
+            
 
             
         </div>
         <div class="Journal">
+            <div class="JJournal">
             <h2 style="text-align: center;">｡𖦹｡° Journal ｡𖦹｡°</h2>
                 
-               
+             
             <details>
-                    <summary>
-                    12/01/2025 7:54pm</summary>
-                <p>
-                    ~ The window got smaller so my heart got smaller too, I used to love the world and now I only love you. I used to want to grow up, now I just want to close my eyes. I didn't know that'd be the last time, so I didn't say goodbye. ~
-                    <br><br>
-                    Everyone was right about exercise and lowering your screen time... unfortunately. 
-                    <br><br>
-                    I feel like I get sidetracked by a lot of random little hobbies I have when I really should just be working on my music 24/7. Like. Why am I making elaborate ribbon rosettes all day. Why do I use twitter. Its genuinely a form of self harm at this point. 
-                    <br><br>
-                    I think I fear becoming too intellectual and fear the actual use of my talents because I don't want to find out that I am actually mediocre, or that these things are meaningless and won't make me happy. Because sometimes it certainly feels meaningless. 
-                    <br><br>
-                    I am not much happier after I play a show, most times. Maybe its because I feel like we've stagnated a little as a band. Maybe its because I don't really enjoy the company of a lot of the people who come to our shows, I don't feel like they like us or understand me. I feel like a lot of the conversations I have with people are surface-level, and that I'm not connected to them and we don't learn anything from each other. 
-                    <br><br>
-                    I think there are forces at play in the world that are making everyone stupider- including me. We spend all our time at jobs that don't address the real issues that are obvious to everyone. Gun violence is everywhere, everything is unaffordable, the climate is being destroyed, our government is run by pedophiles, and our taxes fund genocide. And we go to work and pretend that what we do matters at all. Sorry. Big downer. 
-                    <br><br>
-                    On a surface level I am pretty much everything I wanted to be as a child. I have an interesting, creative job. I have a boyfriend I love. I'm in a band and I play shows. I have friends. I just didn't know the world would get leaner and meaner. I didn't know that there's more to life than being individually fufilled. Because we could throw the greatest show ever and go on a massive tour but the grand context in which it would all take place is fascism. I don't want to be happy and successful under fascism- I should be laying down in front of a tank right now.
-
-
-                </p>
-
+                <summary>
+                    2/15/2026 2:37pm </summary>
+            <p>
+                Finding a new way to think, finding a new way to feel. 
+                <br><br>
+                It's become clear to me that a lot of what we call "personal development" or "wellness" is a distraction from the collective action we need to take to liberate each other. Sure, be your best self- hit the gym, take your vitamins, practice meditation, but what really holds us back from actualization is our shared oppression. I can't be free until everyone is free. There's so many memes right now about people wanting to escape the permanent underclass that is coming (or here already) to envelop us all, but would you really be happy with your wealth knowing that all your peers are destitute? Are you really happy walking out of a nice restaurant when there's a homeless man sleeping on the street? There's a limit to the happiness you can feel at the expense of others- there's a limit on your humanity if you can feel happiness that's actually selfishness. 
+                <br><br>
+                We just had the superbowl here in Santa Clara, which meant the whole IATSE union was taking calls to be stagehands for the show, so I got to take the calls that the senior guys usually take. And I really mean senior btw- your place on the union call list is determined by the number of shifts you've worked, meaning that older guys who've been doing this for decades always get the call first, even if they can't work a light board or need a hip replaced. Me and a lot of the younger people have to fight to get calls, and I get passed up for calls when there's a hot guy with the same skill set as me (evil gay guy nepotism runs show business). I've laid marley with guys that belong in nursing homes fr. But I was a stage hand for a broadway production of the Wiz, which was cool.
+                <br><br>
+           
+            </p>
+        
             </details>
+
+            <details>
+                <summary>
+                12/01/2025 7:54pm</summary>
+            <p>
+                ~ The window got smaller so my heart got smaller too, I used to love the world and now I only love you. I used to want to grow up, now I just want to close my eyes. I didn't know that'd be the last time, so I didn't say goodbye. ~
+                <br><br>
+                Everyone was right about exercise and lowering your screen time... unfortunately. 
+                <br><br>
+                I feel like I get sidetracked by a lot of random little hobbies I have when I really should just be working on my music 24/7. Like. Why am I making elaborate ribbon rosettes all day. Why do I use twitter. Its genuinely a form of self harm at this point. 
+                <br><br>
+                I think I fear becoming too intellectual and fear the actual use of my talents because I don't want to find out that I am actually mediocre, or that these things are meaningless and won't make me happy. Because sometimes it certainly feels meaningless. 
+                <br><br>
+                I am not much happier after I play a show, most times. Maybe its because I feel like we've stagnated a little as a band. Maybe its because I don't really enjoy the company of a lot of the people who come to our shows, I don't feel like they like us or understand me. I feel like a lot of the conversations I have with people are surface-level, and that I'm not connected to them and we don't learn anything from each other. 
+                <br><br>
+                I think there are forces at play in the world that are making everyone stupider- including me. We spend all our time at jobs that don't address the real issues that are obvious to everyone. Gun violence is everywhere, everything is unaffordable, the climate is being destroyed, our government is run by pedophiles, and our taxes fund genocide. And we go to work and pretend that what we do matters at all. Sorry. Big downer. 
+                <br><br>
+                On a surface level I am pretty much everything I wanted to be as a child. I have an interesting, creative job. I have a boyfriend I love. I'm in a band and I play shows. I have friends. I just didn't know the world would get leaner and meaner. I didn't know that there's more to life than being individually fufilled. Because we could throw the greatest show ever and go on a massive tour but the grand context in which it would all take place is fascism. I don't want to be happy and successful under fascism- I should be laying down in front of a tank right now.
+    
+    
+            </p>
+    
+        </details>
+
             <details>
                 <summary>
                 11/09/2025 6:57pm </summary>
@@ -268,7 +370,7 @@
                 </p>
             </details>    
             
-
+          
            
             <details>
                 <summary>
@@ -320,26 +422,25 @@
             </p>
         </details>
 
-    <details>
-        <summary>
-            2/15/2026 2:37pm </summary>
-    <p>
-        Finding a new way to think, finding a new way to feel. 
-        <br><br>
-        It's become clear to me that a lot of what we call "personal development" or "wellness" is a distraction from the collective action we need to take to liberate each other. Sure, be your best self- hit the gym, take your vitamins, practice meditation, but what really holds us back from actualization is our shared oppression. I can't be free until everyone is free. There's so many memes right now about people wanting to escape the permanent underclass that is coming (or here already) to envelop us all, but would you really be happy with your wealth knowing that all your peers are destitute? Are you really happy walking out of a nice restaurant when there's a homeless man sleeping on the street? There's a limit to the happiness you can feel at the expense of others- there's a limit on your humanity if you can feel happiness that's actually selfishness. 
-        <br><br>
-        We just had the superbowl here in Santa Clara, which meant the whole IATSE union was taking calls to be stagehands for the show, so I got to take the calls that the senior guys usually take. And I really mean senior btw- your place on the union call list is determined by the number of shifts you've worked, meaning that older guys who've been doing this for decades always get the call first, even if they can't work a light board or need a hip replaced. Me and a lot of the younger people have to fight to get calls, and I get passed up for calls when there's a hot guy with the same skill set as me (evil gay guy nepotism runs show business). I've laid marley with guys that belong in nursing homes fr. But I was a stage hand for a broadway production of the Wiz, which was cool.
-        <br><br>
+            </div>
    
-    </p>
+    <div class="updates">
 
-    </details>
+
+    </div>
+
+
+
         </div>
+ 
+ 
+    </div>
 
 
+        <div class="Footer">
 
+            
         </div>
-        <div class="Footer"></div>
       </div>
 
 
