@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+</head>
+<style>
+@font-face {
+  font-family: "Averia";
+  src:
+    local("Averia"),
+    url("font/Averia-Regular.ttf") format("opentype") 
+    }
+
+    h1 , h2 {
+        font-family: Averia;
+        color: hotpink;
+    }
+
+    h3 , p , li , a , ul, summary {
+        font-family: Averia;
+        color: rgb(194, 61, 61);
+        font-size: small;
+    }
+
+    body {
+        background-color: rgb(0, 0, 0);
+    }
+
+    .container {
+  display: grid; 
+  grid-template-columns: 1fr 1fr 1fr; 
+  grid-template-rows: 0.1fr 2.8fr 0.1fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "header header header"
+    "table bookcase bookcase"
+    "footer footer footer"; 
+}
+
+.header { grid-area: header; }
+
+.main-nav {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font: 1.2em sans-serif;
+
+  display: flex;
+}
+
+.main-nav a {
+  padding: 0.5em 1em;
+  display: block;
+}
+
+.push {
+  margin-left: auto;
+}
+
+.table { grid-area: table; 
+
+}
+
+.bookcase { grid-area: bookcase; 
+
+}
+
+.footer { grid-area: footer; 
+
+}
+
+</style>
+
+<body>
+  <div class="container">
+  <div class="header">
+    <nav>
+        <ul class="main-nav">
+          <li><a href="astro.html">Astrology</a></li>
+          <li><a href="politics.html">Politics</a></li>
+          <li><a href="scifi.html">Sci-Fi Fantasy</a></li>
+          <li><a href="randoms.html">Randoms</a></li>
+          <li class="push"><a href="index.html">Home</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="table">
+      <h3>Virtue Hoarders</h3>
+      <p><i>"While the Right represents an obdurate obstacle to economic
+          reorganization and large-scale social redistribution, it is actual-
+          ly the liberal PMC that stands in the way of the political revo-
+          lution necessary to forge a different kind of society and world,
+          one in which the dignity of ordinary people and the working
+          class takes center stage."</i></p>
+
+      <h3>Neoliberalism- David Harvey</h3>
+        <p><i>"The neoliberal theory of technological change relies upon the coercive powers of competition to drive the search for new products, new production methods, and new organizational forms. This drive becomes so deeply embedded in entrepreneurial common sense, however, that it becomes a fetish belief: that there is a technological ﬁx for each and every problem. To the degree that this takes hold not only within corporations but also within the state apparatus (in the military in particular), it produces powerful independent trends of technological change that can become destabilizing, if not counterproductive. Technological developments can run amok as sectors dedicated solely to technological innovation create new products and new ways of doing things that as yet have no market (new pharmaceutical products are produced, for which new illnesses are then invented). Talented interlopers can, furthermore, mobilize technological innovations to undermine dominant social relations and institutions; they can, through their activities, even reshape common sense to their own pecuniary advantage. There is an inner connection, therefore, between technological dynamism, instability, dissolution of social solidarities, environmental degradation, deindustrialization, rapid shifts in time–space relations, speculative bubbles, and the general tendency towards crisis formation within capitalism."</i></p>
+    </div>
+  </div>
+</body>
+</html>

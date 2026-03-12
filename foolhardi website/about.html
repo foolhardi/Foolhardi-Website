@@ -13,9 +13,16 @@
           url("font/Averia-Regular.ttf") format("opentype") 
           }
       
-          h1 , h3 , p , li , a , ul {
+          h1 , h2, h3 {
               font-family: Averia;
               color: hotpink;
+          }
+          
+          
+          p , li , a , ul {
+              font-family: Averia;
+              color: hotpink;
+              font-size: smaller;
           }
       
           body {
@@ -28,15 +35,15 @@
 
             display: grid; 
             grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
-            grid-template-rows: .1fr 1fr 1fr 0.6fr 1.9fr 0.6fr; 
+            grid-template-rows: .1fr 1fr 1fr 0.3fr 1.9fr 0.6fr .1fr; 
             gap: 0px 0px; 
             grid-template-areas: 
                 ". header header header."
                 ". main main Quiz ."
                 ". main main Quiz ."
-                ". buttons buttons . ."
+                ". buttons buttons buttons ."
                 ". lint loves loves ."
-                ". . . . ."; 
+                ". Footer Footer Footer ."; 
             }
             
             .header { grid-area: header;
@@ -47,64 +54,96 @@
                 background-color: black;
                 border-radius: 10px;
                 border:2px;
-                border-color: rgb(253, 89, 171);
+                border-color: hotpink;
                 border-style: solid;
                 border-radius: 10px;
                 padding: 4%;
                 margin: 10px;
                 text-align: left;
+                max-height: 26em;
             }
 
             .Quiz { grid-area: Quiz; 
-                background-color: black;
+               
                 border-radius: 10px;
                 border:2px;
-                border-color:rgb(247, 156, 104);
+                border-color: hotpink;
                 border-style: solid;
                 border-radius: 10px;
                 padding: 4%;
                 margin: 10px;
-                text-align: left;
+                text-align: center;
                 overflow-y: scroll;
-                max-height: 18em;
+                max-height: 26em;
+            }
+
+            .Quiz p {
+                color:black;
             }
 
             .buttons { grid-area: buttons; 
-                background-color: black;
+                
                 border-radius: 10px;
                 border:2px;
-                border-color:orchid;
-                border-style: solid;
+                border-color: hotpink;
+                border-style: dashed;
                 border-radius: 10px;
                 padding: 4%;
                 margin: 10px;
-                text-align: left;
+                text-align: center;
+                max-height: 10em;
             }
 
             .loves { grid-area: loves;                
                 background-color: black;
                 border-radius: 10px;
                 border:2px;
-                border-color: rgb(140, 80, 238);
+                border-color: hotpink;
                 border-style: solid;
                 border-radius: 10px;
                 padding: 4%;
                 margin: 10px;
                 text-align: center;
+                max-height: 15em;
             }
 
             .lint { grid-area: lint; 
                 background-color: black;
                 border-radius: 10px;
                 border:2px;
-                border-color: rgb(64, 64, 255);
+                border-color: hotpink;
                 border-style: solid;
                 border-radius: 10px;
                 padding: 4%;
                 margin: 10px;
-                text-align: left;
+                text-align: center;
+                max-height: 17em;
             }
 
+            .me  {
+                width: 20%;
+                position: absolute;
+                left: 700px;
+                top: 80px;
+                z-index: 1;
+            }
+
+            .Footer {
+                grid-area: Footer;
+                text-align: center;
+                max-height: 4em;
+            }
+                    
+            .Footer a {
+                text-decoration: none;
+                font-size: large;
+                
+            }
+
+            .Footer a:hover {
+                color: lightgray;
+                
+            }
             
  @media (max-width:800px) {
 
@@ -133,24 +172,48 @@
     <div class="container">
 
         <div class="header">
-           <a style="text-size-adjust: large;" href="index.html">flowers turn to face it ｡𖦹｡°</a>
+            <h1>｡𖦹｡° flowers turn to face it ｡𖦹｡°</h1>  
         </div>
 
         <div class="main">
-            <p>Hello I'm Damian and this is my site. I'm a regular guy with some funny hobbies- one of them is working on this website. I use they/she/he pronouns. I'm a Pisces Sun-Sagittarius Moon-Virgo Rising and I take that astrology shit real serious. I'm proudly from the Bay Area in California and I was born in 1999. I hope you like this site!
-
+            <h3>⋆✴︎˚｡⋆ About Me ⋆✴︎˚｡⋆</h3> 
+            <p>Hello I'm Damian and this is my site. I'm just a regular guygirl with some funny hobbies- one of them is working on this website. I use they/she/he pronouns. I'm a Pisces Sun-Sagittarius Moon-Virgo Rising and I take that astrology shit real serious. I'm proudly from the Bay Area in California and I was born in 1999. I hope you like this site!
             </p>
+
+            <img style="max-width: 200px;" src="img/meee wildberry dither.png">
+           
         </div>
 
         <div class="Quiz">
-            <img style="max-width: 240px;" src="quiz results/grass.png">
-            <img style="max-width: 400px;" src="quiz results/whiterice.png">
-            <img style="max-width: 240px;" src="quiz results/Wikipedia of the Future.png">
+            <h3>｡𖦹｡° Quiz Results ｡𖦹｡°</h3>
             
+            <a href="https://typeofyou.alltheway.tw/en/"target="_blank">
+            <img style="max-width: 240px;" src="quiz results/grass.png">
+                </a>
+                <br><br>
+            <a href="https://rice.place/quiz.html"target="_blank">
+            <img style="max-width: 400px;" src="quiz results/whiterice.png">
+                </a>
+                <br><br>
+            <a href="https://wikipedia25.org/en/which-wikipedia-of-the-future-are-you"target="_blank">
+            <img style="max-width: 240px;" src="quiz results/Wikipedia of the Future.png">
+                </a>
+                <br><br>
         </div>
 
         <div class="buttons">
-            <p>wah</p>
+            <img src="pixels/artwork.neocities.org 2.png">
+            <img src="pixels/demons.gif">
+            <img src="pixels/moon.png">
+            <img src="pixels/dj.png">
+            <img src="pixels/helmet.gif">
+            <img src="pixels/I love sleeping.gif">
+            <img src="pixels/catdoodle.png">
+            <img style="max-height: 55px;" src="pixels/creature.png">
+            <img src="pixels/eva.gif">
+            <img src="pixels/stars.png">
+            <img src="pixels/portal2.png">
+            <img src="pixels/penis.jpg">
         </div>
 
         <div class="loves">
@@ -159,16 +222,29 @@
                 love sleeping and i love quiet and i love sweaters and i love bags and i love guitar and i love hitting my pen and i love videos of people making desert 
                 and i love watching other people play video games and i love lint taking a nap on me and i love pixel gifs and i love china and i love mexico and i love being filipino and 
                 i love scallion noodles and i love cucumber salad and i love lao gan ma and i love smoking little joints with menthol balls in them and i love mint green tea and i love citrus fruits
-                and i love cantelope and i love mango and i love dates and love chai's fresh haircut and and i love pecs and i love arms and i love stuffed animals and i love purple belt and i 
+                and i love cantelope and i love mango and i love dates and love chai fresh haircut and i love stuffed animals and i love purple belt and i 
                 love swords and i love wax cracking slime asmr video
             </p>
         </div>
 
         <div class="lint">
+            <p>This is my son, her name is Lint</p>
+
+            
            <img src="pixels/TORTIE.gif">
+
+           <p>We call her Linthia for long because she is a rather fancy and dignified little girl. She is a 5 year old dilute Tortiseshell cat. I got her when one of my 
+            classmates found her in a warehouse at her job and couldn't keep her. She was like 3 or 4 months old.
+           </p>
         </div>
 
+        <div class="Footer">
+            <a href="index.html">Return Home?</a>
+        </div>
+      
       </div>
+
+
     
 </body>
 </html>

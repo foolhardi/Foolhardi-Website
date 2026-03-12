@@ -33,16 +33,17 @@
 
     .container {  display: grid;
   grid-template-columns: 1fr .8fr 2fr 1fr;
-  grid-template-rows: .5fr 2fr 2fr .3fr;
-  gap: 0px 0px;
+  grid-template-rows: .5fr 2fr 1.3fr 1fr .3fr;
+  gap: 0px 0px 0px 0px 0px 0px;
   grid-auto-flow: row;
   grid-template-areas:
     ". Header Header ."
     ". Sidebar Welcome ."
     ". Journal Journal ."
+    ". Updates Todo ."
     ". Footer Footer .";
     
-}
+} 
 
 .Header { grid-area: Header;
         text-align: center;
@@ -71,6 +72,7 @@
 
 .Buttons { grid-area: Buttons;
     padding: 4%;
+    text-align: center;
 }
 
 .Cliques { grid-area: Cliques; 
@@ -129,14 +131,14 @@
   grid-template-rows: 1fr; 
   gap: 0px 0px; 
   grid-template-areas: 
-    "JJournal updates"; 
+    "JJournal cute"; 
   grid-area: Journal; 
   
        
        
         text-align: left;
         margin-bottom: 9px;
-        
+        max-height: 20em;
         overflow-y: scroll;
        
 }
@@ -152,8 +154,31 @@
         margin-bottom: 9px;
         background-color: black;
         overflow-y: scroll;
-        max-height: 18em;
+       
+
+
 }
+
+.JJournal summary:hover {
+        color: white;
+        cursor: pointer;
+    }
+
+.cute {
+    border: 2px;
+        border-color: hotpink;
+        border-style: dashed;
+        border-radius: 10px;
+        padding: 20px;
+        margin: 10px;
+        text-align: left;
+        margin-bottom: 9px;
+        
+        overflow-y: scroll;
+        
+}
+
+
 /* width */
 ::-webkit-scrollbar {
   width: 20px;
@@ -175,6 +200,37 @@
 ::-webkit-scrollbar-thumb:hover {
   background: #b30000; 
 }
+
+.Updates {  
+  grid-area: Updates;
+  border: 2px;
+        border-color: hotpink;
+        border-style: solid;
+        border-radius: 10px;
+        padding: 4%;
+        margin: 10px;
+    text-align: center;
+    background-color: black;
+    max-height: 13em;
+    overflow-y: scroll;
+    
+}
+
+.Todo {  
+  grid-area: Todo;
+  border: 2px;
+        border-color: hotpink;
+        border-style: solid;
+        border-radius: 10px;
+        padding: 4%;
+        margin: 10px;
+    text-align: left;
+    background-color: black;
+    max-width: 12em;
+    overflow-y: scroll;
+    
+}
+
 
 .Footer { grid-area: Footer; 
   
@@ -272,6 +328,8 @@
                 I have a lot of interests and projects that I like working on periodically but I don't like posting to social media because it feels performative, and because I don't want corporations having a piece of my creativity. I love the community here on neocities, it feels so organic and human. The effort that we all put into our personal sites is beautiful and it means we all have something in common- our creativity! 
             </p>
           <div class="Buttons">
+                        <img src="pixels/sites/foolhardi 1.gif">
+                        <img src="pixels/sites/foolhardi 2.gif">
                         <img src="pixels/freegaza.gif">
                         <img src="pixels/benicecat.png">
                         <img src="pixels/1advise.gif">
@@ -287,8 +345,9 @@
             <h3>⋆✴︎˚｡⋆ My Projects ⋆✴︎˚｡⋆</h3>
 
             
-                
-            <a class="navbutton" href="poetrywheel.html"> Poem Wheel</a> 
+            <a class="navbutton" href="library.html">Library</a>   
+            <a class="navbutton" href="poetrywheel.html">Feelings Cafe</a> 
+            
             <a class="navbutton" href="https://luckfever.neocities.org/"target="_blank">My Band</a>
 
 
@@ -297,7 +356,7 @@
           
             <a class="navbutton" href="about.html"> About Me</a>
             <a class="navbutton" href="https://foolhardi.atabook.org/"target="_blank">Guestbook</a>
-            <a class="navbutton" href="belovedsites.html">Sites and Resources</a>
+            <a class="navbutton" href="Sites.html">Sites and Resources</a>
             <a class="navbutton" href="https://neocities.org/site/foolhardi"target="_blank">Follow Me on Neocities</a>
             
 
@@ -306,7 +365,7 @@
         <div class="Journal">
             <div class="JJournal">
             <h2 style="text-align: center;">｡𖦹｡° Journal ｡𖦹｡°</h2>
-                
+             
              
             <details>
                 <summary>
@@ -421,12 +480,14 @@
 
             </p>
         </details>
+            <br> <br>
+        <img src="pixels/sleepy.gif">
 
             </div>
    
-    <div class="updates">
+    <div class="cute">
 
-
+        <form method="post" action="https://poll.pollcode.com/37967156"><div style="background-color:#EEEEEE;padding:2px;width:150px;font-family:Arial;font-size:small;color:#DDDDDD;background-image: url('https://images.boardhost.com/bg/circles.gif');"><div style="padding:2px 0px 4px 2px;"><strong>(^._.^)ﾉ☆</strong></div><input type="radio" name="answer" value="1" id="answer379671561" style="float:left;" /><label for="answer379671561" style="float:left;width:125px;">meow</label><div style="clear:both;height:2px;"></div><input type="radio" name="answer" value="2" id="answer379671562" style="float:left;" /><label for="answer379671562" style="float:left;width:125px;">mow</label><div style="clear:both;height:2px;"></div><input type="radio" name="answer" value="3" id="answer379671563" style="float:left;" /><label for="answer379671563" style="float:left;width:125px;">nya</label><div style="clear:both;height:2px;"></div><input type="radio" name="answer" value="4" id="answer379671564" style="float:left;" /><label for="answer379671564" style="float:left;width:125px;">grrrrr</label><div style="clear:both;height:2px;"></div><input type="radio" name="answer" value="5" id="answer379671565" style="float:left;" /><label for="answer379671565" style="float:left;width:125px;">mew</label><div style="clear:both;height:2px;"></div><div align="center" style="padding:3px;"><input type="submit" value=" Vote ">&nbsp;<input type="submit" name="view" value=" View "></div><div align="right" style="font-size:10px">pollcode.com <a href="https://pollcode.com/">free polls</a></div></div></form>
     </div>
 
 
@@ -434,6 +495,32 @@
         </div>
  
  
+
+    <div class="Updates">
+        <h2>updates</h2>
+
+        <h3>3/11/2026</h3>
+        <p>Created the Library</p>
+        <h3>3/7/2026</h3>
+        <p>Added a Return Home Button to Sites and About Me 
+            <br>
+            Added an Updates and To Do sections to Home Page
+
+        </p>
+
+    </div>
+
+    <div class="Todo">
+
+    <h2>To Do</h2>    
+        <li>
+        <ul>Library Page</ul>
+        <ul>Astrology Page</ul>
+        <ul>Hobonichi / Notebook Page</ul>
+        </li>
+    </div>
+
+
     </div>
 
 

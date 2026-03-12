@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+</head>
+<style>
+@font-face {
+  font-family: "Averia";
+  src:
+    local("Averia"),
+    url("font/Averia-Regular.ttf") format("opentype") 
+    }
+
+    h1 , h2 {
+        font-family: Averia;
+        color: hotpink;
+    }
+
+    h3 , p , li , a , ul, summary {
+        font-family: Averia;
+        color: rgb(49, 66, 65);
+        font-size: small;
+    }
+
+    body {
+        background-color: rgb(158, 200, 212);
+    }
+
+    .container {
+  display: grid; 
+  grid-template-columns: 1fr 1fr 1fr; 
+  grid-template-rows: 0.1fr 2.8fr 0.1fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "header header header"
+    "table bookcase bookcase"
+    "footer footer footer"; 
+}
+
+.header { grid-area: header; }
+
+.main-nav {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font: 1.2em sans-serif;
+
+  display: flex;
+}
+
+.main-nav a {
+  padding: 0.5em 1em;
+  display: block;
+}
+
+.push {
+  margin-left: auto;
+}
+
+.table { grid-area: table; 
+
+}
+
+.bookcase { grid-area: bookcase; 
+
+}
+
+.footer { grid-area: footer; 
+
+}
+
+
+</style>
+
+<body>
+    <div class="container">
+        <div class="header">
+        <nav>
+        <ul class="main-nav">
+          <li><a href="astro.html">Astrology</a></li>
+          <li><a href="politics.html">Politics</a></li>
+          <li><a href="scifi.html">Sci-Fi Fantasy</a></li>
+          <li><a href="randoms.html">Randoms</a></li>
+          <li class="push"><a href="index.html">Home</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="table">
+        <h3>The Left Hand of Darkness by Ursula K. Le Guin</h3>
+        <p>This is like my favorite book ever</p>
+
+        <h3>The Wizard of Earthsea series by Usula K. Le Guin</h3>
+        <p>Love all the books in this series, but The Tombs of Atuan is probably my favorite and I come back to it often.</p>
+
+        <h3>A Song of Ice and Fire series by George R. R. Martin</h3>
+        <p>I probably failed French in high school because I was too busy reading these.
+            The Game of Thrones show doesn't do the books justice- the worldbuilding is so good- one of the major things that sticks with me after reading this is a passage that just describes a stew that Samwell Tarley has after reaching the citadel. The greatness of this book is the little things.
+        </p>
+
+        <h3>Dune</h3>
+        <p>Dune rocks, everyone I know irl knows I love Dune and would have me explain it to them so much that I'm actually kind of over it now. Still amazing though, believe the hype.</p>
+    </div>
+
+    <div class="bookcase">
+
+
+    </div>
+</div>
+
+</body>
+
+</html>

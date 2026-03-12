@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+
+<style>
+
+@font-face {
+  font-family: "Averia";
+  src:
+    local("Averia"),
+    url("font/Averia-Regular.ttf") format("opentype") 
+    }
+
+    h1 , h2 {
+        font-family: Averia;
+        color: hotpink;
+    }
+
+    h3 , p , li , a , ul, summary {
+        font-family: Averia;
+        color: hotpink;
+        font-size: small;
+    }
+
+    body {
+        background-color: black;
+    }
+
+
+.main-nav {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font: 1.2em sans-serif;
+
+  display: flex;
+}
+
+.main-nav a {
+  padding: 0.5em 1em;
+  display: block;
+}
+
+.push {
+  margin-left: auto;
+}
+</style>
+
+
+</head>
+
+
+
+
+
+<body>
+
+    <nav>
+        <ul class="main-nav">
+          <li><a href="astro.html">Astrology</a></li>
+          <li><a href="politics.html">Politics</a></li>
+          <li><a href="scifi.html">Sci-Fi Fantasy</a></li>
+          <li><a href="randoms.html">Randoms</a></li>
+          <li class="push"><a href="index.html">Home</a></li>
+        </ul>
+      </nav>
+
+    
+</body>
+</html>

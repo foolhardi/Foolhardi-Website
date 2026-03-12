@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+
+    <style>
+        @font-face {
+          font-family: "Averia";
+          src:
+            local("Averia"),
+            url("font/Averia-Regular.ttf") format("opentype") 
+            }
+        
+            h1 , h2 {
+                font-family: Averia;
+                color: black;
+            }
+        
+            h3 , p , li , a , ul, summary {
+                font-family: Averia;
+                color:black;
+                font-size: small;
+            }
+        
+            body {
+                background-color: rgb(147, 102, 151);
+            }
+        
+        
+        .container {
+          display: grid; 
+          grid-template-columns: 1fr 1fr 1fr; 
+          grid-template-rows: 0.1fr 2.8fr 0.1fr; 
+          gap: 0px 0px; 
+          grid-template-areas: 
+            "header header header"
+            "table bookcase bookcase"
+            "footer footer footer"; 
+        }
+        
+        .header { grid-area: header; }
+        
+        .main-nav {
+          margin: 0;
+          padding: 0;
+          list-style: none;
+          font: 1.2em sans-serif;
+        
+          display: flex;
+        }
+        
+        .main-nav a {
+          padding: 0.5em 1em;
+          display: block;
+        }
+        
+        .push {
+          margin-left: auto;
+        }
+        
+        .table { grid-area: table; 
+        
+        }
+        
+        .bookcase { grid-area: bookcase; 
+        
+        }
+        
+        .footer { grid-area: footer; 
+        
+        }
+        
+        
+        </style>
+        
+</head>
+<body>
+    <div class="container">
+
+        <div class="header">
+          <nav>
+              <ul class="main-nav">
+                <li><a href="astro.html">Astrology</a></li>
+                <li><a href="politics.html">Politics</a></li>
+                
+                <li><a href="scifi.html">Sci-Fi Fantasy</a></li>
+                <li><a href="randoms.html">Randoms</a></li>
+                <li class="push"><a href="index.html">Home</a></li>
+              </ul>
+            </nav>
+        </div>    
+
+    <div class="table">
+        <h3>Finite and Infinite Games</h3>
+        <p><i>"To be playful is not to be trivial or frivolous , or to act as
+			though nothing of consequence will happen. On the contrary,
+			when we are playful with each other we relate as free persons,
+			and the relationship is open to surprise; everything that happens is of consequence. It is, in fact, seriousness that closes
+			itself to consequence, for seriousness is a dread of the unpredictable outcome of open possibility. To be serious is to press
+			for a specified conclusion. To be playful is to allow for possibility whatever the cost to oneself"</i></p>
+        <p>I started reading this book because @future infinitive on tiktok was posting about theories on the origins of consciousness and dropped that they had a podcast on youtube called "the multiverse school" and all the episodes so far are about game theory through the lens of this book.
+            Still not exactly sure how I feel about it? It has some really amazing quotes and insight but I'm not sure if it holds up as a framework for understanding reality like it claims. The writing can be confusing. </p>
+   
+       <h3>The Red Book- Carl Jung</h3>
+            <p><i>"My soul, where are you? Do you hear me? I speak, I call
+                you-are you there? I have returned, I am here again. I have
+                shaken the dust of all the lands from my feet, and I have come
+                to you, I am with you. After long years of long wandering, I
+                have come to you again. Should I tell you everything I have
+                seen, experienced, and drunk in? Or do you not want to hear
+                about all the noise of life and the world? But one thing you
+                must know: the one thing I have learned is that one must live
+                this life.
+                This life is the way, the long sought-after way to the
+                unfathomable, which we call divine." </i></p>
+    
+        </div>
+
+        
+
+    </div>
+</body>
+</html>

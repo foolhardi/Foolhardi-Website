@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sites</title>
+
+    <style>
+        @font-face {
+          font-family: "Averia";
+          src:
+            local("Averia"),
+            url("font/Averia-Regular.ttf") format("opentype") 
+            }
+        
+            h1 , h2, h3 {
+                font-family: Averia;
+                color: hotpink;
+            }
+        
+            p , li , a , ul, summary {
+                font-family: Averia;
+                color: hotpink;
+                font-size: small;
+            }
+        
+            body {
+                background-color: black;
+                background-image: url("bgimg/flower 1.png");
+        
+            }
+        
+            .container {  display: grid;
+          grid-template-columns: 1fr .8fr 2fr 1fr;
+          grid-template-rows: .5fr 2fr .3fr;
+          gap: 0px 0px;
+          grid-auto-flow: row;
+          grid-template-areas:
+            ". Header Header ."
+            ". Sidebar Resources ."
+            ". Footer Footer .";
+            
+        }
+        
+        .Header { grid-area: Header;
+                text-align: center;
+        }
+        
+        
+        .Sidebar { grid-area: Sidebar; 
+    border: 2px;
+        border-color: hotpink;
+        border-style: solid;
+        border-radius: 10px;
+        padding: 20px;
+        margin: 10px;
+        background-color: black;
+        opacity: 70%;
+        
+    }
+
+    .Sidebar h3 , h4 {
+        text-align: center;
+    }
+
+
+    .Sidebar ul {
+        list-style-type: none;
+        
+    }
+
+    .Sidebar li {
+        margin: 5px;
+
+    }
+
+
+
+.navbutton {
+        border: 2px;
+        border-color: hotpink;
+        border-style: solid;
+        border-radius: 9px;
+        padding: 10px;
+        margin: 0px;
+        display: block;
+        text-align: center;
+        text-decoration: none;
+
+    }
+
+.navbutton:hover {
+        background-color: lightgray;
+    }
+
+.Resources {  
+grid-area: Resources;
+border: 2px;
+ border-color: hotpink;
+border-style: solid;
+border-radius: 10px;
+    padding: 4%;
+                margin: 10px;
+            text-align: center;
+            background-color: black;
+            
+        }
+
+.Footer {
+    text-align: center;
+}
+        
+.Footer a {
+    text-decoration: none;
+    font-size: large;
+    
+}
+
+.Footer a:hover {
+    color: lightgray;
+    
+
+}
+</style>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="Header">
+            <h1>｡𖦹｡° flowers turn to face it ｡𖦹｡°</h1>
+
+        </div>
+
+        <div class="Sidebar">
+            <h3>⋆✴︎˚｡⋆ My Projects ⋆✴︎˚｡⋆</h3>
+
+            
+                
+            <a class="navbutton" href="poetrywheel.html"> Poem Wheel</a> 
+            <a class="navbutton" href="https://luckfever.neocities.org/"target="_blank">My Band</a>
+
+
+        <h3>⋆✴︎˚｡⋆ Webrings - Links ⋆✴︎˚｡⋆ </h3>
+            
+          
+            <a class="navbutton" href="about.html"> About Me</a>
+            <a class="navbutton" href="https://foolhardi.atabook.org/"target="_blank">Guestbook</a>
+            <a class="navbutton" href="Sites.html">Sites and Resources</a>
+            <a class="navbutton" href="https://neocities.org/site/foolhardi"target="_blank">Follow Me on Neocities</a>
+            
+
+        </div>
+
+        <div class="Resources">
+            <h3>｡𖦹｡°Sites I Love｡𖦹｡°</h3>
+        
+        <a href="https://coffeeplant.neocities.org/"><img src='pixels/sites/coffeeplant.png'></a>
+        <a href="https://ribo.zone/"><img src='pixels/Sites/ribose.png'></a>
+        <a href="https://cinni.net/"><img src='pixels/Sites/cinni_angelbutton3.gif'></a>
+        <a href="https://rice.place/"><img src="pixels/Sites/riceus.gif"></a>
+        <a href="https://doqmeat.com/"><img src="pixels/Sites/doqmeat.png"></a>
+        <a href="https://dimden.dev/"><img src="pixels/Sites/dimden.gif"></a>
+        <a href="https://killychan.neocities.org/"><img src="pixels/Sites/killychan.gif"></a>
+        <a href="https://plasticdino.net/"><img src="pixels/Sites/plasticdino.gif"></a>
+        <a href="https://bedr00mz.neocities.org/"><img src="pixels/Sites/Bedr00mZ_BUTT0N4-2023_Viktor_Tibay.gif"></a>
+        <br><br>
+
+        <h3>｡𖦹｡°Resources｡𖦹｡°</h3>
+        
+        <p> One of the essentials that helps this site run smooth is <a href="https://scumsuck.com/resources/deployneocities/">deploying to neocities</a>. This tutorial teaches you to connect your Visual Studio Code (which is the program I code in) to Github, and your Github account to Neocities. No more copy and pasting! </p>
+        <br>
+        <p>I use <a href="https://app.dithermark.com/">dithermark</a> to dither... my marks...</p>
+        <br>
+        <p>There's plenty of other helpful stuff that I used to build this site but I can't really think of them right now....</p>
+
+        </div>
+
+
+
+
+
+
+
+
+
+    </div>
+    
+    <div class="Footer">
+        <a href="index.html">Return Home?</a>
+    </div>
+</body>
+</html>
