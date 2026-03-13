@@ -150,19 +150,93 @@
     .container {
 
         display: grid; 
-        grid-template-columns: 1fr 1fr 1fr; 
-        grid-template-rows: .1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
+        grid-template-columns: 1fr; 
+        grid-template-rows: .1fr 1fr 1fr .5fr .6fr 1fr .1fr; 
         gap: 0px 0px; 
         grid-template-areas: 
-            "header header header"
-            "main main main"
-            "Quiz Quiz Quiz"
-            "buttons buttons buttons"
-            "lint lint lint"
-            "loves loves loves"
-            ". . ."; 
+            "header"
+            "main"
+            "Quiz"
+            "buttons"
+            "lint"
+            "loves"
+            "Footer"
+            ; 
             }
 
+
+
+            .main { grid-area: main; 
+                background-color: black;
+                border-radius: 10px;
+                border:2px;
+                border-color: hotpink;
+                border-style: solid;
+                border-radius: 10px;
+                padding: 4%;
+                margin: 10px;
+                text-align: left;
+                overflow-y: scroll;
+                
+            }
+
+            .Quiz { grid-area: Quiz; 
+               
+                border-radius: 10px;
+                border:2px;
+                border-color: hotpink;
+                border-style: solid;
+                border-radius: 10px;
+                padding: 4%;
+                margin: 10px;
+                text-align: center;
+                overflow-y: scroll;
+                
+            }
+
+            .Quiz p {
+                color:black;
+            }
+
+            .buttons { grid-area: buttons; 
+                
+                border-radius: 10px;
+                border:2px;
+                border-color: hotpink;
+                border-style: dashed;
+                border-radius: 10px;
+                padding: 4%;
+                margin: 10px;
+                text-align: center;
+                overflow-y: scroll;
+            }
+
+            .loves { grid-area: loves;                
+                background-color: black;
+                border-radius: 10px;
+                border:2px;
+                border-color: hotpink;
+                border-style: solid;
+                border-radius: 10px;
+                padding: 4%;
+                margin: 10px;
+                text-align: center;
+                overflow-y: scroll;
+                
+            }
+
+            .lint { grid-area: lint; 
+                background-color: black;
+                border-radius: 10px;
+                border:2px;
+                border-color: hotpink;
+                border-style: solid;
+                border-radius: 10px;
+                padding: 4%;
+                margin: 10px;
+                text-align: center;
+                
+            }
         }
 
 </style>
