@@ -30,6 +30,19 @@
     }
 
 
+    .container {
+  display: grid; 
+  grid-template-columns: 1fr 1fr 1fr; 
+  grid-template-rows: 0.1fr 2.8fr 0.1fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "header header header"
+    "table bookcase bookcase"
+    "footer footer footer"; 
+}
+
+.header { grid-area: header; }
+
 .main-nav {
   margin: 0;
   padding: 0;
@@ -48,20 +61,39 @@
   margin-left: auto;
 }
 
+.table { grid-area: table; 
+
+}
+
+.bookcase { grid-area: bookcase; 
+ text-align: center;
+}
+
+.desk {
+  color: #111;
+            background: rgb(255, 255, 255);
+            box-shadow: 0 0 100px pink;
+}
+
+.footer { grid-area: footer; 
+
+}
 
 @media (max-width:800px) {
 
-.container {
-display: grid; 
-grid-template-columns: 1fr ; 
-grid-template-rows: 0.1fr 1fr 1fr 0.1fr; 
-gap: 0px 0px; 
-grid-template-areas: 
-  "header"
-  "bookcase"
-  "table"
-  "footer"; 
+  .container {
+  display: grid; 
+  grid-template-columns: 1fr ; 
+  grid-template-rows: 0.1fr 1fr 1fr 0.1fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "header"
+    "bookcase"
+    "table"
+    "footer"; 
 }
+
+
 
 }
 
@@ -75,7 +107,8 @@ grid-template-areas:
 
 
 <body>
-
+  <div class="container">
+    <div class="header">
     <nav>
         <ul class="main-nav">
           <li><a href="astro.html">Astrology</a></li>
@@ -85,7 +118,50 @@ grid-template-areas:
           <li class="push"><a href="index.html">Home</a></li>
         </ul>
       </nav>
+    </div>
 
+
+    <div class="table">
+      <h2> ⋆✴︎˚｡⋆2026 ⋆✴︎˚｡⋆</h2>
+
+      <h3>There Is No Antimemetics Division</h3>
+      <p><i>There are
+        ideas which cannot be spread. There are entities and phenomena which
+        harvest and consume information, particularly information about themselves.
+        You take a Polaroid photo of one, it'll never develop. You write a description
+        down with a pen on paper and hand it to someone— but what you've written
+        turns out to be hieroglyphs, and nobody can understand them, not even you.
+        You can look directly at one and it won't even be invisible, but you'll still
+        perceive nothing there. Dreams you can't hold onto and secrets you can
+        never share, and lies, and living conspiracies. It's a conceptual subculture, of
+        ideas consuming other ideas and... sometimes... segments of reality.
+        Sometimes, people.</i></p>
+
+
+
+      <h3>Game of Thrones</h3>
+      <p>Reread this because I can sense in my heart that George really is going to release <i>The Winds of Winter</i> in our lifetimes. </p>
+
+
+
+
+    </div>
+
+
+    <div class="bookcase">
+      <br><br><br><br><br><br><br>
+      <p>Sometimes I think reading <br> only makes me more confused.</p>
+      <br><br><br>
+      <img style="border-radius: 50%;"   class="desk"  src="pixels/library.gif">
+
+    </div>
+
+
+
+
+
+
+    </div>
     
 </body>
 </html>
