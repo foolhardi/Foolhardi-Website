@@ -85,6 +85,21 @@ grid-template-areas:
   "footer"; 
 }
 
+.table { grid-area: table; 
+  max-width: 400px;
+}
+
+.bookcase { grid-area: bookcase; 
+  text-align: center;
+  max-width: 40px;
+  object-fit: cover;
+
+}
+
+.footer { grid-area: footer; 
+  max-width: 800px;
+}
+
 }
 
 </style>
@@ -94,6 +109,7 @@ grid-template-areas:
         <div class="header">
         <nav>
         <ul class="main-nav">
+          <li><a href="Library.html">Library</a></li>
           <li><a href="astro.html">Astrology</a></li>
           <li><a href="politics.html">Politics</a></li>
           <li><a href="scifi.html">Sci-Fi Fantasy</a></li>
