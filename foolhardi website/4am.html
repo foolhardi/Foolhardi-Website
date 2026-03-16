@@ -14,6 +14,7 @@
     url("font/Averia-Regular.ttf") format("opentype") 
     }
 
+
     h1 {
         font-family: Averia;
         color: rgb(231, 187, 194);
@@ -29,28 +30,47 @@
       background-color: #42222f; 
       
     }  
-  
-    .flex {
-      display:flex;
-      
-      
+
+    .container {
+      display: grid;
+  grid-template-columns: 1fr ;
+  grid-template-rows: 1fr .3fr;
+  gap: 0px 0px 0px 0px 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+      "txt"
+      "footer"
     }
-    
-    .next {
-      position: absolute;
-      top: 750px;
-      padding: 90px;
+
+    .txt {
+      grid-area: txt;
+
     }
-      
+
+    .footer {
+     grid-area: footer; 
+     text-align: center;
+     text-decoration: none;
+     font-size: x-large;
+     word-spacing: 60px;
+     }
+
+.footer a {
+    text-decoration: none;
+     font-size: x-large; 
+   
+}
+ 
       
 </style>
 </head>
 <body>
-
+  <div class="container">
+    <div class="txt">
     <h2>Dirt</h2>
       <p> waking up at 4am with you,<br>
       and bringing helmets<br>
-      to go hammer spikes into the body of <a href="god dialogue.html">God</a>.<br>
+      to go hammer spikes into the body of God.<br>
       which is of course, just dirt.<br>
       <br>
       its just metal that we've fashioned out of heat, skill, and wisdom<br>
@@ -70,9 +90,15 @@
       the stomach enzymes of god, the erosive powers of the waters of God,<br>
       breaking us down into,<br>
       of course, dirt. </p>
-
-     <div class= "next">
-       <a href="mywayout.html">--></a> 
+    </div>
+     <div class= "footer">
+      <br><br> <br><br>
+      <a href="spike.html"><=</a> 
+      <a href="index.html">Home</a>
+      <a href="mywayout.html">=></a> 
+      <br><br> <br><br>
       </div>
-
+      
+       
+    </div>
 </body>

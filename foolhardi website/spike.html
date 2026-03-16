@@ -34,15 +34,24 @@
     .container {
   display: grid; 
   grid-template-columns: 1fr 1fr 1fr 1fr; 
-  grid-template-rows: 0.5fr 1fr 1fr 1fr 0.5fr; 
+  grid-template-rows: 0.1fr 1fr 1fr 1fr 0.5fr; 
   gap: 0px 0px; 
   grid-template-areas: 
-    ". . . ."
-    ". txt1 gif1 ."
-    ". gif2 txt2 ."
-    ". txt3 gif3 ."
-    ". footer footer ."; 
+    "txt . . ."
+    "txt txt1 gif1 ."
+    "txt gif2 txt2 ."
+    "txt txt3 gif3 ."
+    "footer footer footer footer"; 
 }
+
+.txt{
+    grid-area: txt;
+    text-align: center;
+}
+
+
+
+
 .txt1 {
      grid-area: txt1;
      text-align: center;
@@ -69,13 +78,42 @@
     text-align: center;
 }
 .footer {
-     grid-area: footer; }
+     grid-area: footer; 
+     text-align: center;
+     text-decoration: none;
+     font-size: x-large;
+     word-spacing: 60px;
+     }
+
+.footer a {
+    text-decoration: none;
+     font-size: x-large; 
+   
+}
 </style>
 
 
 </head>
 <body>
     <div class="container">
+        <div class="txt">
+            <h1>
+                <br><br><br>
+                A <br>
+                N<br>
+                G<br>
+                E<br>
+                L<br>
+                S<br>
+                P<br>
+                I<br>
+                K<br>
+                E
+            </h1>
+        </div>
+
+
+
         <div class="txt1">
             <p>The angel bears the spike. <br>
                 The spike will drive the matter<br>
@@ -133,7 +171,11 @@
             <img src="pixels/wingedorb.gif" alt="little angel" >  
         </div>
         <div class="footer">
-
+            <br><br> <br><br>
+            <a href="poetrywheel.html"><=</a> 
+            <a href="index.html">Home</a>
+            <a href="4am.html">=></a>
+            <br><br> <br><br>
         </div>
       </div>
       
