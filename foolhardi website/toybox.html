@@ -8,12 +8,16 @@
 
         body {
                     overflow-x: hidden;
-                    background-color: rgb(60, 60, 60);
+                    background-color: chocolate;
+                   
                 }
+
+             
                 .room {
                     width: 100%;
                     position: relative;
-                    transform: scale(0.70) translateY(-25%);
+                    transform: scale(1);
+                   
                 }
                 .room span {
                     opacity: 0;
@@ -31,15 +35,31 @@
                     text-transform: uppercase;
                     z-index: 99;
                 }
+
         .rotate, .appear {
                 width: fit-content;
 			height: fit-content;
 			display: inline-block;
 			position: absolute;
 			color: transparent; background:transparent;
+            
+        }
+        .rotate:hover { 
+            transform: scale(1.5);
+        } 
 
+        .door {
+            width: fit-content;
+			height: fit-content;
+			display: inline-block;
+			position: absolute;
+			color: transparent; background:transparent;  
         }
 
+        .door:hover{
+            transform: scale(1.05);
+        }
+        
 
 
             </style>
@@ -47,93 +67,250 @@
 
 
 <body>
-    <div class="room">
 
-        <div style="background: url(pixels/vending\ machine.png);
+    <main class="room">
+    
+    <div style="background: url(bgimg/bricks.png);
+        position: absolute; background-size: 100%;
+        top: -1vw; left: -1vw;
+        width: 101vw; height: 46.6vw;">
+    </div>
+    
+
+
+
+
+    <div style="background: url(bgimg/rug.png);
+        position: absolute; background-size: 100%;
+        top: 30vw; left: 1.4vw;
+        width: 40vw; height: 15vw;">
+    </div>
+
+    <div style= "background: url(bgimg/vending.png);
 		position: absolute; background-size: 100%;
-		top: 6vw; left: 7vw;
-		width: 24.750vw; height: 33.2vw;">
+		top: 5vw; left: 22vw;
+		width: 18vw; height: 25vw;">
 	</div>
+
+    <a href="index.html"
+    class="door"
+    style="top: 5vw; left: 1.6vw;">
+    <img src="bgimg/door.png"
+    style="width: 9.3vw;">
+    <span>Return Home?</span>
+    </a>
 
     <a href="https://fizzsea.net/extra/fizzyvendor.html"target="_blank"
     class="rotate"
-    style="top: 9vw; left: 9.7vw;">
-    <img src="pixels/fizzysea/fizzsea1.png"></a>
+    style="top: 7vw; left: 24vw;">
+    <img src="pixels/fizzysea/fizzsea1.png"
+    style="width: 2.5vw;">
+    </a>
 
     <a href="https://grlrot.neocities.org/"target="_blank"
     class="rotate"
-    style="top: 9vw; left: 13.2vw;">
-    <img src="pixels/fizzysea/lovepotion.gif"></a>
+    style="top: 7vw; left: 27.3vw;">
+    <img src="pixels/fizzysea/lovepotion.gif"
+    style="width: 2.5vw;">
+    </a>
 
     <a href="https://cloudcover.neocities.org/"target="_blank"
     class="rotate"
-    style="top: 9vw; left: 16vw;">
-    <img src="pixels/fizzysea/cloudcover1.png"></a>
-
-    <a href="https://mitzyrie.neocities.org/"target="_blank"
-    class="rotate"
-    style="top: 9vw; left: 19vw;">
-    <img src="pixels/fizzysea/mitzyrie1.png"></a>
-
-    <a href="https://artwork.neocities.org/cliques"target="_blank"
-    class="rotate"
-    style="top: 9vw; left: 22vw;">
-    <img src="pixels/fizzysea/artwork1.png"></a>
-
-    <a href="https://pastelhello.com/"target="_blank"
-    class="rotate"
-    style="top: 9.3vw; left: 25vw;">
-    <img src="pixels/fizzysea/pastelhello1.png"></a>
+    style="top: 7vw; left: 29.9vw;">
+    <img src="pixels/fizzysea/cloudcover1.png"
+    style="width: 2.5vw;">
+    </a>
 
     <a href="https://joro.nu/"target="_blank"
     class="rotate"
-    style="top: 16.7vw; left: 9.2vw;">
-    <img src="pixels/fizzysea/joroki-fizzyvendor.png"></a>
+    style="top: 7vw; left: 32vw;">
+    <img src="pixels/fizzysea/joroki-fizzyvendor.png" 
+    style="width: 2.5vw;">
+    </a>
 
-    <a href="https://butt0n-z.neocities.org/"target="_blank"
+    <a href="https://mitzyrie.neocities.org/"target="_blank"
     class="rotate"
-    style="top: 16.7vw; left: 12vw;">
-    <img src="pixels/fizzysea/buttonsfiz.png"></a>
+    style="top: 7vw; left: 34.3vw;">
+    <img src="pixels/fizzysea/mitzyrie1.png"
+    style="width: 2.5vw;">
+    </a>
+
+
+
+    <div style= "background: url(bgimg/fwidge.png);
+    position: absolute; background-size: 100%;
+    top: 11.69vw; left: 40vw;
+    width: 10vw; height: 18vw;">
+    </div>
+
+
+
+    <a href="https://artwork.neocities.org/cliques"target="_blank"
+    class="rotate"
+    style="top: 12.3vw; left: 24vw;">
+    <img src="pixels/fizzysea/artwork1.png"
+    style="width: 2.5vw;"></a>
+
+    <a href="https://pastelhello.com/"target="_blank"
+    class="rotate"
+    style="top: 12.6vw; left: 26.5vw;">
+    <img src="pixels/fizzysea/pastelhello1.png"
+    style="width: 2.5vw;"></a>
 
     <a href="https://starbage.art/"target="_blank"
     class="rotate"
-    style="top: 16.7vw; left: 15.5vw;">
-    <img src="pixels/fizzysea/starbage1.gif"></a>
+    style="top: 12.6vw; left: 29vw;">
+    <img src="pixels/fizzysea/starbage1.gif"style="width: 2.5vw;"></a>
 
     <a href="https://antikrist.lol/"target="_blank"
     class="rotate"
-    style="top: 16.3vw; left: 18.8vw;">
-    <img src="pixels/fizzysea/antikrist.png"></a>
+    style="top: 12.3vw; left: 31.5vw;">
+    <img src="pixels/fizzysea/antikrist.png"
+    style="width: 2.5vw;"></a>
 
     <a href="https://keysklubhouse.com/"target="_blank"
     class="rotate"
-    style="top: 16.7vw; left: 22.5vw;">
-    <img src="pixels/fizzysea/keys.gif"></a>
+    style="top: 12.6vw; left: 34vw;">
+    <img src="pixels/fizzysea/keys.gif"
+    style="width: 1.38vw;"></a>
 
     <a href="toybox.html"target="_blank"
     class="rotate"
-    style="top: 16.7vw; left: 25vw;">
-    <img src="pixels/fishie.gif"></a>
+    style="top: 12.4vw; left: 35.5vw;">
+    <img src="pixels/fishie.gif"
+    style="width: 2vw;"></a>
 
 
 
 
 
+
+
+
+    <a href="https://olliveen.neocities.org/"target="_blank"
+    class="rotate"
+    style="top: 6vw; left: 50vw;">
+    <img src="pixels/pixelbill/littleshop.png"
+    style="width: 2.5vw;"></a>
+
+    <a href="https://lapinlunaire-games.neocities.org/neighbourhood/"target="_blank"
+    class="rotate"
+    style="top: 3vw; left: 45vw;">
+    <img src="pixels/pixelbill/pixelbill-hadestown.png"
+    style="width: 2.5vw;"></a>
+
+    <a href="https://astersarchive.neocities.org/"target="_blank"
+    class="rotate"
+    style="top: 9vw; left: 42vw;">
+    <img src="pixels/pixelbill/pixellbill-fun home.png"
+    style="width: 2.5vw;"></a>
+
+    <a href="https://astersarchive.neocities.org/"
+    target="_blank"
+    class="rotate"
+    style="top: 12vw; left: 54vw;">
+    <img src="pixels/pixelbill/pixellbill-rockyhorror.png"
+    style="width: 2.5vw;"></a>
+
+    <a href="https://sallycanwait.neocities.org/" target="_blank"
+    class="rotate"
+    style="top: 4vw; left: 55vw;">
+    <img src="pixels/pixelbill/theatremolinaverse_fiddler.png"
+    style="width: 2.5vw;"></a>
+
+
+
+
+
+
+    <div style= "background: url(bgimg/table.png);
+    position: absolute; background-size: 100%;
+    top: 28vw; left: 53vw;
+    width: 30vw; height: 20vw;">
+    </div>
 
 
 
     <a href="http://cupped-expressions.net/cheese/quiz/"target="_blank"
     class="rotate"
-    style="top: 30vw; left: 50vw;">
-    <img src="pixels/coffee table/parmesan01.gif"></a>
+    style="top: 32vw; left: 70vw;">
+    <img src="pixels/coffee table/parmesan01.gif"
+    style="width: 2.5vw;"></a>
 
-    <a href="https://web.archive.org/web/20250407201106/https://pixelrevival.xyz/boba/"target="_blank"
+    <a href="https://spiders.neocities.org/"target="_blank"
     class="rotate"
-    style="top: 30vw; left: 52vw;">
-    <img src="pixels/coffee table/boba9.gif"></a>
+    style="top: 33vw; left: 76vw;">
+    <img src="pixels/coffee table/nico-tomatoes.png"
+    style="width: 2.5vw;"></a>
+
+    <a href="https://pastelhello.com/"target="_blank"
+    class="rotate"
+    style="top: 35.8vw; left: 70vw;">
+    <img src="pixels/coffee table/crockpot-pastelhell.gif"
+    style="width: 2.5vw;"></a>
+
+    <a href="https://glamourbombing.nekoweb.org/"target="_blank"
+    class="rotate"
+    style="top: 35vw; left: 62vw;">
+    <img src="pixels/coffee table/blops.gif"
+    style="width: 2.5vw;"></a>
+
+    <a href="https://solaria.neocities.org/"target="_blank"
+    class="rotate"
+    style="top: 30vw; left: 60vw;">
+    <img src="pixels/coffee table/solariateacup.png"
+    style="width: 2.5vw;"></a>
+
+    <a href="https://hillhouse.neocities.org/"target="_blank"
+    class="rotate"
+    style="top: 33vw; left: 56vw;">
+    <img src="pixels/coffee table/hillhouse-teacup.png"
+    style="width: 2.5vw;"></a>
+
+
+    <div style= "background: url(bgimg/shelf.png);
+    position: absolute; background-size: 100%;
+    top: 3.9vw; left: 65vw;
+    width: 20vw; height: 24vw;">
+    </div>
 
 
 
+
+
+    <a href="https://reallyreallybored.neocities.org/"target="_blank"
+    class="rotate"
+    style="top: 19.3vw; left: 80vw;">
+    <img src="pixels/lava/cow abduction lava lamp.gif"
+    style="width: 2vw;"></a>
+
+    <a href="https://solaria.neocities.org/"target="_blank"
+    class="rotate"
+    style="top: 10vw; left: 70vw;">
+    <img src="pixels/lava/solarialamp2.gif"
+    style="width: 2vw;"></a>
+
+    <a href="https://humanfinny.neocities.org/"target="_blank"
+    class="rotate"
+    style="top: 14.8vw; left: 78vw;">
+    <img src="pixels/lava/finnylamp2.gif"
+    style="width: 2vw;"></a>
+
+    <a href="https://overthetopstories.neocities.org/"target="_blank"
+    class="rotate"
+    style="top: 4vw; left: 73vw;">
+    <img src="pixels/lava/OTTSLamp.gif"
+    style="width: 2vw;"></a>
+
+
+    <a href="https://dollarchive.neocities.org/"target="_blank"
+    class="rotate"
+    style="top: 19.7vw; left: 70vw;">
+    <img src="pixels/lava/dollarchivell.gif"
+    style="width: 2vw;"></a>
+
+
+    </main>
     </div>
 
 </body>
