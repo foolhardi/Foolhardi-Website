@@ -33,14 +33,13 @@
 
     .container {  display: grid;
   grid-template-columns: 1fr .8fr 2fr 1fr;
-  grid-template-rows: .1fr 1.4fr 1.6fr 1fr .3fr;
+  grid-template-rows: .1fr 1.4fr 2fr .3fr;
   gap: 0px 0px 0px 0px 0px 0px;
   grid-auto-flow: row;
   grid-template-areas:
     ". Header Header ."
     ". Sidebar Welcome ."
     ". Cute Journal ."
-    ". Cute Updates ."
     ". Footer Footer .";
    
     
@@ -54,7 +53,7 @@
   grid-area: Welcome;
   border: 2px;
         border-color: hotpink;
-        border-style: solid;
+        border-style: dashed;
         border-radius: 10px;
         padding: 4%;
         margin: 10px;
@@ -139,7 +138,7 @@
         margin-bottom: 9px;
         background-color: rgba(0, 0, 0, 0.9);
         margin-bottom: 9px;
-        max-height: 28em;
+        max-height: 30em;
         overflow-y: scroll;
 
 
@@ -162,28 +161,24 @@
     margin-bottom: 9px;
     text-align: center;
     overflow-y: scroll;
-    max-height: 50em;
+    max-height: 30em;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
         
 }
 
-
-
-
-.Updates {  
-  grid-area: Updates;
-  border: 2px;
-        border-color: hotpink;
-        border-style: solid;
-        border-radius: 10px;
-        padding: 4%;
-        margin: 10px;
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0.7);
-    max-height: 15em;
-    overflow-y: scroll;
-    
+.Cute img {
+    max-width: 200px;
+    border-radius: 10px;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
 }
 
+
+.Cute img:hover {
+    filter: none;
+    -webkit-filter: grayscale(0);
+}
 
 
 
@@ -204,7 +199,6 @@
     "Welcome Welcome Welcome"
      "Sidebar Sidebar Sidebar"
     "Journal Journal Journal"
-    "Updates Updates Updates"
     "Cute Cute Cute";
     }
 
@@ -264,6 +258,8 @@
 </head>
 <body>
     <div class="container">
+        
+
         <div class="Header">
             <h1>｡𖦹｡° flowers turn to face it ｡𖦹｡°</h1>
         </div>
@@ -277,10 +273,11 @@
 
                 It is intended as both a portfolio of my projects and as a mode of self expression. 
                 I have a lot of interests and projects that I like working on periodically but I don't like 
-                posting to social media because it feels performative, and because I don't want corporations
-                having a piece of my creativity. I love the community here on neocities, it feels so organic 
+                posting to social media because it makes me insane. I love the community here on neocities, it feels so organic 
                 and human. The effort that we all put into our personal sites is beautiful and it means we 
                 all have something in common- our creativity! 
+                <br>
+                Please be aware this site has nsfw content. (Swearing, adult topics, etc)
             </p>
           <div class="Buttons">
                         <img src='pixels/Sites/foolhardi1.gif'>
@@ -320,6 +317,24 @@
 
         <div class="Journal">
             <h2 style="text-align: center;">⋆✴︎˚｡⋆ Journal ⋆✴︎˚｡⋆</h2>
+
+            <details>
+                <summary>
+                    4/4/2026 7:03pm
+                </summary>
+                <p>
+                    We had a really great show at the Peace and Justice Center on the 29th. It was a fundraiser for this guy Ulises, who was detained and arrested by ICE, and sustained injuries from their violence and negligence. We raised about $1400, which was great. I was also very happy with our performance, I always seem to forget that we're goated before we do a show tbh. I've been meaning to act crazier when performing- to move around and interact with the crowd more, which I think I got to do during this show. It was a lot easier because I couldn't fucking see anything through the uplights on the floor (which is a good thing! lighting is good.)
+                    <br><br>
+                    There used to be a ton of shows at the P&J, but they stopped around when covid happened. I remember I was there one night in the summer of 2020, there was a show after we were all out protesting, and we all wore our face masks and the sky was green at night from wildfire smoke. 
+                    <br><br>
+                    It feels like few days before the covid lockdown again now, where we all know something is happening and that theres not much we can do to stop it. But this time we know its because our government has gone wrong, done wrong, and soon we will be facing consequences for it. I just hope that when summer comes we will be marching in the name of justice and decency again, because there just isn't any in this country right now. 
+                    <br><br>
+                    P.S.
+                    I don't mean to be corny, but everyone please stay safe the week of April 19th, it is very very bad astrologically. 
+
+                </p>
+
+            </details>
              
             <details>
                 <summary>
@@ -483,39 +498,20 @@
             </div>
    
     <div class="Cute">
-        <img style="max-width: 200px;" src="pixels/sparkles1.gif">
-        <a href="https://grossgirl94.neocities.org/homepage"target="_blank"><img src="pixels/Sites/grossgirl94.gif"></a>
-        <a href="https://coffeeplant.neocities.org/"target="_blank"><img src='pixels/sites/coffeeplant.png'></a>
-        <a href="https://bedr00mz.neocities.org/"target="_blank"><img src="pixels/Sites/Bedr00mZ_BUTT0N4-2023_Viktor_Tibay.gif"></a>
-        <a href="https://dollarchive.neocities.org/"target="_blank"><img src="pixels/Sites/dollarchive.gif"></a>
-        <a href="https://freakphone.net/"target="_blank"><img src="pixels/Sites/freakbutton3.gif"></a>
-        <a href="https://dimden.dev/"target="_blank"><img src="pixels/Sites/dimden.gif"></a>
-        
-        <a href="https://doqmeat.com/"target="_blank"><img src="pixels/Sites/doqmeat.png"></a>
-        <a href="https://humanfinny.neocities.org/"target="_blank"><img src="pixels/Sites/humanfinny.gif"></a>
-        <a href="https://killychan.neocities.org/"target="_blank"><img src="pixels/Sites/killychan.gif"></a>
-        <a href="https://cute.lolipop.jp/"target="_blank"><img src="pixels/Sites/hot choco.gif"></a>
+        <h3>⋆✴︎˚｡⋆ Life Updates ⋆✴︎˚｡⋆</h3>
 
-        <a href="https://layercake.moe/"target="_blank"><img src="pixels/Sites/layercakebutton.gif"></a>
-        <a href="https://plasticdino.net/"target="_blank"><img src="pixels/Sites/plasticdino.gif"></a>
+        <img src="img/luka birthday!.jpg">
+        <p>Bro's birthday</p>
+        <br>
 
+        <img src="img/mepjshow.jpg">
+        <p>Me at the PJC fundraiser show</p>
+        <br>
 
-        <a href="https://lejlart.com/apple.html"target="_blank"><img src="pixels/Sites/appledust.gif"></a>
-        <a href="https://fwing.pet/"target="_blank"><img src="pixels/Sites/fwing.gif"></a>
-        <a href="https://cinni.net/"target="_blank"><img src='pixels/Sites/cinni_angelbutton3.gif'></a>
-        <a href="https://rice.place/"target="_blank"><img src="pixels/Sites/riceus.gif"></a>
+        <img src="img/ducks.jpg">
+        <p>Baby ducks at my job</p>
 
-        <a href="https://ita.toys/"target="_blank"><img src="pixels/Sites/ita.gif"></a>
        
-        <a href="https://humantooth.neocities.org"target="_blank"><img src="pixels/Sites/humantooth.png"></a>
-        
-        <a href="https://hyperpostcard.neocities.org/"target="_blank"><img src="pixels/Sites/hyperpostcard.gif"></a>
-        <a href="https://altalenae.neocities.org/"target="_blank"><img src="pixels/Sites/altalenae.png"></a>
-        <a href="https://ribo.zone/"target="_blank"><img src='pixels/Sites/ribose.png'></a>
-        <a href="https://derrek.org/"target="_blank"><img src="pixels/Sites/derrek.gif"></a>
-        
-       
-        <img style="max-width: 200px;" src="pixels/sparkles1.gif">
     </div>
 
 
@@ -524,20 +520,7 @@
  
  
 
-    <div class="Updates">
-        <h2>｡𖦹｡° Updates °｡𖦹｡</h2>
-       <h3>3/16/2026</h3>
-       <p>Added image scroller sidbar to home, and updated sites page.</p>
-        <h3>3/11/2026</h3>
-        <p>Created the Library</p>
-        <h3>3/7/2026</h3>
-        <p>Added a Return Home Button to Sites and About Me 
-            <br>
-            Added an Updates and To Do sections to Home Page
-
-        </p>
-
-    </div>
+   
 
    
     </div>

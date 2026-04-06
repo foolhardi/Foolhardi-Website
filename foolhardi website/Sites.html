@@ -37,7 +37,7 @@
           grid-auto-flow: row;
           grid-template-areas:
             ". Header Header ."
-            ". Resources Resources ."
+            ". Sites Resources ."
             ". Footer Footer .";
             
         }
@@ -47,40 +47,55 @@
         }
         
         
-        .Sidebar { grid-area: Sidebar; 
-    border: 2px;
+    .Sites { 
+        grid-area: Sites; 
+        border: 2px;
         border-color: hotpink;
-        border-style: solid;
+        border-style: dashed;
         border-radius: 10px;
         padding: 20px;
         margin: 10px;
-        background-color: black;
-        opacity: 70%;
-        
-    }
-
-    .Sidebar h3 , h4 {
+        background-color: rgba(0, 0, 0, 0.3);
         text-align: center;
-    }
-
-
-    .Sidebar ul {
-        list-style-type: none;
         
     }
 
-    .Sidebar li {
-        margin: 5px;
+   
 
+
+
+    .Resources {  
+        grid-area: Resources;
+        border: 2px;
+        border-color: hotpink;
+        border-style: solid;
+        border-radius: 10px;
+        padding: 4%;
+        margin: 10px;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.9);
+                
+      }
+
+    .Resources a {
+        color: lightgray;
     }
 
 
+    .Footer {
+        grid-area: Footer;
+        text-align: center;
+        margin-left: 550px;
+        margin-right: 550px;
+    }
 
-.navbutton {
+
+    .navbutton {
         border: 2px;
         border-color: hotpink;
         border-style: solid;
         border-radius: 9px;
+        background-color: black;
         padding: 10px;
         margin: 0px;
         display: block;
@@ -89,32 +104,11 @@
 
     }
 
-.navbutton:hover {
+    .navbutton:hover {
         background-color: lightgray;
     }
 
-.Resources {  
-grid-area: Resources;
-border: 2px;
- border-color: hotpink;
-border-style: solid;
-border-radius: 10px;
-    padding: 4%;
-                margin: 10px;
-            text-align: center;
-            background-color: black;
-            
-        }
 
-.Footer {
-    text-align: center;
-}
-        
-.Footer a {
-    text-decoration: none;
-    font-size: large;
-    
-}
 
 
     @media (max-width:800px) {
@@ -145,36 +139,49 @@ border-radius: 10px;
 
         </div>
 
+        <div class="Sites">
+            <h3>｡𖦹｡°Sites I Love｡𖦹｡°</h3>
+            <p>⋆✴︎˚｡⋆✴︎˚｡⋆✴︎˚｡⋆✴︎˚｡⋆✴︎˚｡⋆✴︎˚｡⋆</p>
+            <a href="https://hyperpostcard.neocities.org/"target="_blank"><img style="max-height: 32px;" src="pixels/Sites/hyperpostcard.gif"></a>
+            <a href="https://ribo.zone/"target="_blank"><img src='pixels/Sites/ribose.png'></a>
+            <a href="https://derrek.org/"target="_blank"><img src="pixels/Sites/derrek.gif"></a>
+            <a href="https://grossgirl94.neocities.org/homepage"target="_blank"><img src="pixels/Sites/grossgirl94.gif"></a>
+            <a href="https://coffeeplant.neocities.org/"target="_blank"><img src='pixels/sites/coffeeplant.png'></a>
+            <a href="https://bedr00mz.neocities.org/"target="_blank"><img src="pixels/Sites/Bedr00mZ_BUTT0N4-2023_Viktor_Tibay.gif"></a>
+            <a href="https://dollarchive.neocities.org/"target="_blank"><img src="pixels/Sites/dollarchive.gif"></a>
+            <a href="https://dimden.dev/"target="_blank"><img src="pixels/Sites/dimden.gif"></a>
+            <a href="https://doqmeat.com/"target="_blank"><img src="pixels/Sites/doqmeat.png"></a>
+            <a href="https://killychan.neocities.org/"target="_blank"><img src="pixels/Sites/killychan.gif"></a>
+            <a href="https://cute.lolipop.jp/"target="_blank"><img src="pixels/Sites/hot choco.gif"></a>
+    
+            <a href="https://ita.toys/"target="_blank"><img src="pixels/Sites/ita.gif"></a>
+            <a href="https://humantooth.neocities.org"target="_blank"><img src="pixels/Sites/humantooth.png"></a>
+            <a href="https://simone.computer/#/"target="_blank"><img src="pixels/Sites/simone computer.gif"></a>
+            
+            <a href="https://lejlart.com/apple.html"target="_blank"><img src="pixels/Sites/appledust.gif"></a>
+            <a href="https://fwing.pet/"target="_blank"><img src="pixels/Sites/fwing.gif"></a>
+            <a href="https://cinni.net/"target="_blank"><img src='pixels/Sites/cinni_angelbutton3.gif'></a>
+            <a href="https://rice.place/"target="_blank"><img src="pixels/Sites/riceus.gif"></a>
+            <a href="https://plasticdino.net/"target="_blank"><img src="pixels/Sites/plasticdino.gif"></a>
+            
+            <p>⋆✴︎˚｡⋆✴︎˚｡⋆✴︎˚｡⋆✴︎˚｡⋆✴︎˚｡⋆✴︎˚｡⋆</p>
+
+        </div>
      
         <div class="Resources">
-            <h3>｡𖦹｡°Sites I Love｡𖦹｡°</h3>
-        <a href="https://grossgirl94.neocities.org/homepage"target="_blank"><img src="pixels/Sites/grossgirl94.gif"></a>
-        <a href="https://coffeeplant.neocities.org/"target="_blank"><img src='pixels/sites/coffeeplant.png'></a>
-        <a href="https://bedr00mz.neocities.org/"target="_blank"><img src="pixels/Sites/Bedr00mZ_BUTT0N4-2023_Viktor_Tibay.gif"></a>
-        <a href="https://dollarchive.neocities.org/"target="_blank"><img src="pixels/Sites/dollarchive.gif"></a>
-        <a href="https://dimden.dev/"target="_blank"><img src="pixels/Sites/dimden.gif"></a>
-        <a href="https://doqmeat.com/"target="_blank"><img src="pixels/Sites/doqmeat.png"></a>
-        <a href="https://killychan.neocities.org/"target="_blank"><img src="pixels/Sites/killychan.gif"></a>
-        <a href="https://cute.lolipop.jp/"target="_blank"><img src="pixels/Sites/hot choco.gif"></a>
-
-        <a href="https://ita.toys/"target="_blank"><img src="pixels/Sites/ita.gif"></a>
-        <a href="https://humantooth.neocities.org"target="_blank"><img src="pixels/Sites/humantooth.png"></a>
-        <a href="https://hyperpostcard.neocities.org/"target="_blank"><img src="pixels/Sites/hyperpostcard.gif"></a>
-        <a href="https://ribo.zone/"target="_blank"><img src='pixels/Sites/ribose.png'></a>
-        <a href="https://lejlart.com/apple.html"target="_blank"><img src="pixels/Sites/appledust.gif"></a>
-        <a href="https://fwing.pet/"target="_blank"><img src="pixels/Sites/fwing.gif"></a>
-        <a href="https://cinni.net/"target="_blank"><img src='pixels/Sites/cinni_angelbutton3.gif'></a>
-        <a href="https://rice.place/"target="_blank"><img src="pixels/Sites/riceus.gif"></a>
-        <a href="https://plasticdino.net/"target="_blank"><img src="pixels/Sites/plasticdino.gif"></a>
-        <br><br>
-
+           
         <h3>｡𖦹｡°Resources｡𖦹｡°</h3>
         
         <p> One of the essentials that helps this site run smooth is <a href="https://scumsuck.com/resources/deployneocities/"target="_blank">deploying to neocities</a>. This tutorial teaches you to connect your Visual Studio Code (which is the program I code in) to Github, and your Github account to Neocities. No more copy and pasting! </p>
         <p>I use <a href="https://app.dithermark.com/"target="_blank">dithermark</a> to dither... my marks...</p>
         <p>If you use grid then <a href="https://grid.layoutit.com/"target="_blank">this</a> is very helpful to create your lay out. I personally like grid because I find it easier to make my pages mobile responsive with grid.</p>
+        <p>This may be controversial but I prefer <a href="https://developer.mozilla.org/en-US/docs/Web/CSS"target="_blank">MDN Docs</a> over W3 schools for learning code, but that might just be because of my preference for darkmode lol.</p>
+        <p>ALSO my big fucking pet peeve is when links that take you to another site don't open in another tab/window. You can paste <span style="color: lightgrey;">target="_blank"</span> after your links to make them open in another tab instead. If you do this already then I love u.</p>
         <p>There's plenty of other helpful stuff that I used to build this site but I can't really think of them right now....</p>
         <br>
+
+        <h3>｡𖦹｡°Epic and Awesome Links｡𖦹｡°</h3>
+        <p><a href="https://www.windows93.net/">Windows93.net</a> Minigames, freaky tools, web nostalgia... I think you guys are gonna like this site.</p>
         </div>
 
 
@@ -188,7 +195,7 @@ border-radius: 10px;
     </div>
     
     <div class="Footer">
-        <a href="index.html">Return Home?</a>
+        <a class="navbutton"  href="index.html">Return Home?</a>
     </div>
 </body>
 </html>
