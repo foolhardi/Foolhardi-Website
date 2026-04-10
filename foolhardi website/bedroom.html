@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bedroom</title>
+
+<style>
+    @font-face {
+  font-family: "Averia";
+  src:
+    local("Averia"),
+    url("font/Averia-Regular.ttf") format("opentype") 
+    }
+
+    h1 , h2 {
+        font-family: Averia;
+        color: rgb(255, 255, 255);
+    }
+
+    h3 , p , li , a , ul, summary {
+        font-family: Averia;
+        color: rgb(255, 255, 255);
+        font-size: small;
+    }
+
+ 
+
+    body {
+        background-color: rgb(40, 43, 59);
+    }
+
+
+    .container {
+  display: grid; 
+  grid-template-columns: .5fr 1fr 1fr; 
+  grid-template-rows:  2.8fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "nav room room"; 
+    }
+
+
+    .nav {
+        grid-area: nav;
+        text-align: center;
+        margin: 10px 50px
+    }
+
+    .navbutton {
+        border: 2px;
+        border-color: rgb(255, 255, 255);
+        border-style: solid;
+        border-radius: 9px;
+        padding: 10px;
+        margin: 0px;
+        display: block;
+        text-align: center;
+        text-decoration: none;
+
+    }
+
+    .navbutton:hover {
+        background-color: rgb(99, 99, 99);
+    }
+
+
+    .room {
+        grid-area: room;
+        background-image: url("img/bedroom.png");
+        background-color: #cccccc;
+        height: 930px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+    }
+
+    
+
+</style>
+
+
+
+
+
+
+</head>
+<body>
+  <div class="container">
+    <div class="nav">
+
+        <h2>Bedroom</h2>
+        <a class="navbutton" href="spike.html">AngelSpike</a>
+        <br>
+        <a class="navbutton" href="moors.html">The Moors</a>
+        <br>
+        <a class="navbutton" href="truism.html">Truisms</a>
+
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <a class="navbutton" href="index.html">Home?</a>
+
+
+    </div>
+
+    <div class="room">
+       
+
+    </div>
+
+
+  </div>  
+
+
+
+
+</body>
+</html>
