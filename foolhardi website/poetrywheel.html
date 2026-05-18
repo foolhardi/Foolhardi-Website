@@ -5,16 +5,96 @@
     <meta name="viewport"> <content="width=device-width, initial scale=1.0>
 
     <link rel="icon" type="image/png">
-    <link rel="stylesheet" href="css/poetrywheel.css">
+    <link rel="stylesheet" href="">
     <title>⋆✴︎˚｡⋆ Poem Wheel ｡𖦹｡°</title>
 
     
        
  <style>
-body {
+:root {
+    @font-face {
+        font-family: Averia;
+        src: url(/font/averia-regular.ttf);
+    }
+    
+
+}
+
+
+*,
+*::before
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin:0;
+}
+
+html {
+    position: relative;
+    height: 100%;
+
+}
+
+.tooltip {
    
-    background-image: url("bgimg/flower 1.png");
+    display: none;
+}
+
+.center, .deg0, .deg45, .deg135, .deg180, .deg225, .deg315 :hover + .tooltip{
+    display: block;
+
+
+}
+
+
+h1 {
+    color:gray;
+    font-family: Averia;
+    text-align: center;
+}
+
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: url("/bgimg/poem wheel.jpg") no-repeat center center fixed;
+    background-size: cover;
+    
+    font-family: Averia;
+  }
+
+.circle-container {
+    position: relative;
+    padding: 6em;
+    width: 24em;
+    height: 24em;
+    padding: 2.8em;
+    /*2.8em = 2em*1.4 (2em = half the width of a link with img, 1.4 = sqrt(2))*/
+    border-radius: 50%;
+    margin: 1.75em auto 0;
+    
+    
+}
+.circle-container a {
+    display: block;
+    position: absolute;
+    top: 70%; left: 50%;
+    width: 4em; height: 4em;
+    margin: -2em;
    
+}
+.circle-container img { display: block; width: 100%; }
+.deg0 { transform: translate(12em); } /* 12em = half the width of the wrapper */
+.deg45 { transform: rotate(45deg) translate(12em) rotate(-45deg); }
+.deg135 { transform: rotate(135deg) translate(12em) rotate(-135deg); }
+.deg180 { transform: translate(-12em); }
+.deg225 { transform: rotate(225deg) translate(12em) rotate(-225deg); }
+.deg315 { transform: rotate(315deg) translate(12em) rotate(-315deg); }
+
+.circle-container img:hover {
+    background-color: rgb(90, 90, 90) ;
+    box-shadow: 0 0 100px rgb(255, 255, 255);
 }
 
  </style>   
@@ -28,7 +108,7 @@ body {
         
         <a href='index.html' class='center'><img class= "glow" src='pixels/home.gif'></a>
         <div class="tooltip">home</div>
-        <a href='reno.html' class='deg0'><img src='pixels/emotomagotchi.gif'></a>
+        <a href='reno.html' class='deg0'><img src=''></a>
         <div class="tooltip"></div>
         <a href='spike.html' class='deg45'><img src='pixels/slpegasuschibi5.gif'></a>
         <div class="tooltip"></div>
@@ -36,7 +116,7 @@ body {
         <div class="tooltip"></div>
         <a href='mywayout.html' class='deg180'><img src='pixels/rdragon.gif'></a>
         <a href='truism.html' class='deg225'><img src='pixels/crystal ball 2.gif'></a>
-        <a href='#' class='deg315'><img src='pixels/bunnyCUTE.gif'></a>
+        <a href='diary.html' class='deg315'><img src='pixels/bunnyCUTE.gif'></a>
     </div>
 
 
