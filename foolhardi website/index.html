@@ -34,14 +34,14 @@
 
     .container {  display: grid;
   grid-template-columns: 0.8fr 1.4fr 0.8fr;
-  grid-template-rows: 0.2fr 1.1fr 1.2fr 1fr;
+  grid-template-rows: 0.2fr 0.4fr 1fr .55fr;
   gap: 0px 0px;
   grid-auto-flow: row;
   grid-template-areas:
     "profile header ."
     "profile nav luckfever"
     "lwindow nav luckfever"
-    "lwindow updates rwindow";
+    "webrings updates rwindow";
 }
 
 .header { grid-area: header; 
@@ -91,8 +91,9 @@
         border-color: rgb(214, 162, 248);
         border-style: dotted;
         border-radius: 100%;
+        min-height: 250px;
         padding: 20px;
-        margin: 30px;
+        margin-top: 50px;
         background:rgb(214, 162, 248, 0.1);
         align-items: center;
         text-align: center;
@@ -129,7 +130,15 @@
 }
 
 .webrings { grid-area: webrings; 
-
+    border: 7px;
+        border-color:rgb(214, 162, 248);
+        border-style: dotted;
+        border-radius: 100%;
+        padding: 20px;
+        margin: 30px;
+        background:rgba(255, 255, 255, 0.3);
+        align-items: center;
+        text-align: center;
    
 
        
@@ -154,7 +163,7 @@
 .lwindow { grid-area: lwindow; 
     background: rgba(0, 0, 0);
     max-width: 300px;  
-    margin-top: 70px;
+    margin-top: 30px;
 }
 
 .lwindow img:hover {
@@ -263,11 +272,17 @@
             </p>    
         </div>
         <div class="webrings">
-						
-        </div>
+            <br><br><br>
+            <script data-widget="images" src="https://rock-webring.neocities.org/webstring.js"></script> 
+
+            <div id='Hallownest-bugs'> <script type="text/javascript" src="https://samsolarsystem.neocities.org/onionring-variables-Hallownest-bugs.js"></script> <script type="text/javascript" src="https://samsolarsystem.neocities.org/onionring-widget-Hallownest-bugs-knight.js"></script> </div> </center> 			
+          
+       
+            </div>
         <div class="updates">
             <h2>Updates</h2>
             <ul>
+                <li>6.5.26 Added webrings to index</li>
                 <li>6.1.26 Updated about me page</li>
                 <li>5.12.26 Totally changed the index page</li>
                 <li>5.09.26 Increased txt size in library/astro page</li>
