@@ -7,8 +7,8 @@
 
 <style>
      body {
-        margin-top: 90px;
-        background-image: url(bgimg/KITTY.png);
+        margin: 0;
+        background-image: url(bgimg/sparkles.jpg);
         background-repeat:  no-repeat;
         background-size: cover;
 
@@ -21,18 +21,18 @@
   overflow-y: auto;
   scrollbar-width: none;
   position: fixed;
-  top: -6vh;
+  top: -1vh;
   left: 0;
   right: 0;
   margin: 0 auto;
-  
+  background-color: rgb(161, 190, 214);
 }
 
 #portal-canvas {
   width: 110.16vh;
   height: 110.16vh;
   position: fixed;
-  top: calc();
+  top: calc(-1vh - 1.08vh);
   left: 50%;
   transform: translateX(-50%);
   z-index: 0;
@@ -61,7 +61,7 @@
 }
 
 .content > * {
-  background: rgb(145, 250, 123);
+  background: white;
   padding: 10px;
   margin: 20px auto;
   width: fit-content;
@@ -75,16 +75,6 @@
 .content > *:nth-child(7n+5) { left: -3%; }
 .content > *:nth-child(7n+6) { left: 15%; }
 .content > *:nth-child(7n+7) { left: -12%; }
-
-.home img{
-    position: absolute;
-    top: 5%;
-    left: 20%;
-    transform: rotate(-80deg);
-}
-
-
-
 
 </style>
 </head>
@@ -278,7 +268,7 @@
 </div> 
     
 <div class= "home">
-    <a href="index.html"><img src="img/bluekitty.png" alt="Return Home?"></a>
+    <a href="index.html">Return Home?</a>
 
 </div>
     
