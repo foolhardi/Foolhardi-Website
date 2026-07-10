@@ -53,9 +53,9 @@
 
 .nav { grid-area: nav; 
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+        grid-template-columns: repeat(5, 1fr);
         gap: 15px;
-        padding: 130px 100px;
+        padding: 100px 50px;
         margin: 50px;
         border: 2px;
         box-sizing: border-box;
@@ -75,6 +75,7 @@
         flex-direction: column;
         align-items: center;
         text-decoration: none;
+        text-align: center;
        
     }
 
@@ -164,8 +165,8 @@
 
 .lwindow { grid-area: lwindow; 
     background: rgba(0, 0, 0);
-    max-width: 300px;  
     margin-top: 30px;
+    margin-left: 25px;
 }
 
 .lwindow img:hover {
@@ -296,7 +297,7 @@
         <div class="status">
         </div>
         <div class="lwindow">
-            <img src="img/feverlings.png" alt="baaaaaa means 'i love u' in lamb">  
+            <img style="max-width: 400px;" src="img/feverlings.png" alt="baaaaaa means 'i love u' in lamb">  
 
         </div>
         <div class="rwindow">

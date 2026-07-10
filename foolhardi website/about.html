@@ -35,7 +35,7 @@
 
             display: grid; 
             grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
-            grid-template-rows: .1fr 1fr 1fr 0.3fr 1.4fr 0.1fr; 
+            grid-template-rows: .1fr .5fr 1fr 0.3fr 1.1fr 2fr 0.1fr; 
             gap: 0px 0px; 
             grid-template-areas: 
                 ". header header header."
@@ -43,6 +43,7 @@
                 ". main main Quiz ."
                 ". buttons buttons buttons ."
                 ". lint loves loves ."
+                ". computah computah theater ."
                 ". Footer Footer Footer ."; 
             }
             
@@ -52,7 +53,6 @@
 
             .main { grid-area: main; 
                 background-color: black;
-                border-radius: 10px;
                 border:2px;
                 border-color: hotpink;
                 border-style: solid;
@@ -64,8 +64,6 @@
             }
 
             .Quiz { grid-area: Quiz; 
-               
-                border-radius: 10px;
                 border:2px;
                 border-color: hotpink;
                 border-style: solid;
@@ -104,7 +102,7 @@
                 padding: 4%;
                 margin: 10px;
                 text-align: center;
-                max-height: 15.4em;
+                max-height: 21em;
             }
 
             .lint { grid-area: lint; 
@@ -117,7 +115,7 @@
                 padding: 4%;
                 margin: 10px;
                 text-align: center;
-                max-height: 17em;
+                max-height: 21em;
             }
 
             .me  {
@@ -126,6 +124,34 @@
                 left: 700px;
                 top: 80px;
                 z-index: 1;
+            }
+
+            .computah { grid-area: computah; 
+                background-color: black;
+                border:2px;
+                border-color: hotpink;
+                border-style: solid;
+                border-radius: 10px;
+                padding: 4%;
+                margin: 10px;
+                text-align: left;
+                max-height: 36em;
+                overflow-y: scroll;
+
+            }
+
+            .theater {  grid-area: theater; 
+                background-color: black;
+                border-radius: 10px;
+                border:2px;
+                border-color: hotpink;
+                border-style: solid;
+                border-radius: 10px;
+                padding: 4%;
+                margin: 10px;
+                text-align: center;
+                max-height: 36em;
+
             }
 
             .Footer {
@@ -179,21 +205,19 @@
 
             .main { grid-area: main; 
                 background-color: black;
+                overflow: scroll;
                 border-radius: 10px;
                 border:2px;
                 border-color: hotpink;
                 border-style: solid;
-                border-radius: 10px;
                 padding: 4%;
                 margin: 10px;
                 text-align: left;
-                overflow-y: scroll;
+                
                 
             }
 
             .Quiz { grid-area: Quiz; 
-               
-                border-radius: 10px;
                 border:2px;
                 border-color: hotpink;
                 border-style: solid;
@@ -261,7 +285,8 @@
         </div>
 
         <div class="main">
-            <img style="float: left; margin: 20px 20px 5px 5px; max-width: 260px;" src="img/meeeeee.jpg">
+            <img style="float: left; margin: 20px 20px 5px 5px; max-width: 15em;" src="img/meeeeee.jpg">
+
             <h3 style="text-align: center;">⋆✴︎˚｡⋆ About Me ⋆✴︎˚｡⋆</h3> 
             <h2><i>"I'm the king of the internet. You're the peon of the 'puter"</i></h2>
             <p>Hello I'm Damian and this is my site. I'm just a regular guygirl with some funny hobbies- one of them is working on this website.<br>
@@ -271,6 +296,7 @@
                 For work, I'm a stage hand and audio engineer. Sometimes they let me play with the lights if I'm extra good. <br>
                 I'm really into playing paralives rn.<br>
                 I hope you like this site!
+                
             </p>
 
            
@@ -357,6 +383,39 @@
            <p>We call her Linthia for long because she is a rather fancy and dignified little girl. She is a 5 year old dilute Tortiseshell cat. I got her when one of my 
             classmates found her in a warehouse at her job and couldn't keep her. She was like 3 or 4 months old.
            </p>
+        </div>
+
+        <div class="computah">
+            <p style="text-align: center;">Practice Guide for computer</p>  
+            <p> Adapted from Ron Miller's Advanced Improv Practice Guide.<br>
+                Before starting your daily practice routine, read and seriously consider the following:<br><br>
+                A. DAILY AFFIRMATIONS<br>
+                
+                    How fortunate I am that in this life I am one who has been allowed to create beauty with computer.
+                    It is my responsibility to create peace, beauty, and love with computer.<br><br>
+                    B. I WILL BE KIND TO MYSELF
+                    IT IS ONLY COMPUTER<br>
+                    No matter my level of development in computer, how good or bad I think I am, it is only computer and I am a beautiful person.
+                    I will not compare myself with my colleagues. If they do computer beautifully, I will enjoy it and be thankful and proud that I live in fellowship with them.
+                    There will always be someone with more abilities in computer than my own as there will be those with less.<br><br>
+                    C. REASONS TO DO COMPUTER<br>
+                    To contribute to the world's spiritual growth.<br>
+                    To contribute to my own self-discovery and spiritual growth.<br>
+                    To pay homage to all the great practitioners of computer, past and present, who have added beauty to the world.<br><br>
+                    D. RID YOUR SELF OF THE FOLLOWING REASONS FOR BEING A PRACTITIONER OF COMPUTER<br>
+                    to create self-esteem<br>
+                    to be "hip"<br>
+                    to manipulate<br>
+                    to get rich or famous</p>
+
+        </div>
+
+        <div class="theater">
+            <p>I work as a stage hand/sound mixer for theater and here's some of the show's I've worked on.</p>
+            <img src="pixels/pixelbill/carrot_lion king.png">
+            <img src="pixels/pixelbill/Pixelbill_LesMis.png">
+            <img src="pixels/pixelbill/aster-pixelbill-seussical.png">
+            <img src="pixels/pixelbill/theatremolinaverse_fiddler.png">
         </div>
 
         <div class="Footer">
